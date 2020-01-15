@@ -9,35 +9,38 @@ export default function(props) {
   return(
     <Layout>
     <EmailForm autofocus={true} />
-    <p>
-      I will be working on this book over the next several months. If you are interested in getting early access, updates, or any other news about this subject, sign up below  The mailing list should be low-traffic, but will allow you to review in-development parts of the book and even get a discount when the book goes on sale.
-    </p>
-    <section class="updates">
-      <h1>Updates</h1>
-      <ol class="blank-list">
-        <li>
-          <time datetime="2020-01-14">Jan 14, 2020</time>
+    <section className="pa3 ma0 bt">
+      <p className="lh-copy measure">
+        I will be working on this book over the next several months. If you are interested in getting early access, updates, or any other news about this subject, sign up below  The mailing list should be low-traffic, but will allow you to review in-development parts of the book and even get a discount when the book goes on sale.
+      </p>
+    </section>
+    <section className="pa3">
+      <h1 className="f3 mt0">Updates</h1>
+      <ol class="list pa0 ma0 measure">
+        <li className="mv3 lh-copy">
+          <time className="b pr2" datetime="2020-01-14">Jan 14, 2020</time>
           <span role="img" aria-label="book">📕</span>
           Posted a <a href="chapter1.html">draft of Chapter 1</a>, which outlines the purpose and motivation for the book.
         </li>
-        <li>
-          <time datetime="2019-12-12">Dec 12, 2019</time>
+        <li className="mv3 lh-copy">
+          <time className="b pr2" datetime="2019-12-12">Dec 12, 2019</time>
           <span role="img" aria-label="note">📝</span>
           Posted a draft <a href="#outline">Outline</a>
         </li>
-        <li>
-          <time datetime="2019-11-18">Nov 18, 2019</time>
+        <li className="mv3 lh-copy">
+          <time className="b pr2" datetime="2019-11-18">Nov 18, 2019</time>
           <span role="img" aria-label="rocket">🚀</span>
           Created the site.
         </li>
       </ol>
     </section>
-    <hr />
     <section class="outline">
       <a name="outline"></a>
-      <h1>Proposed Outline</h1>
-      <a href="mailto:davetron5000+sustainablerails@gmail.com">Email me some feedback</a>
-      <ol>
+      <h1 className="f3 pv3 tc tl-ns w-100 bg-near-black near-white ph2-ns">Proposed Outline</h1>
+      <p className="pa2 tc tl-ns">
+        <a className="link underline blue f4" href="mailto:davetron5000+sustainablerails@gmail.com">Email me some feedback</a>
+      </p>
+      <ol className="mh2 lh-copy measure">
         <li><a href="chapter1.html">Intro - what is this book for and why</a></li>
         <li>The Rails Application Architecture<ol>
           <li>Boundaries</li>
@@ -215,7 +218,9 @@ export default function(props) {
           </ol>
         </li>
       </ol>
-      <a href="mailto:davetron5000+sustainablerails@gmail.com">Email me some feedback</a>
+      <p className="pa2 tc tl-ns">
+        <a className="link underline blue f4" href="mailto:davetron5000+sustainablerails@gmail.com">Email me some feedback</a>
+      </p>
     </section>
     </Layout>
   )

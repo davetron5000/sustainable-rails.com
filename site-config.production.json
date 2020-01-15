@@ -2,7 +2,7 @@
   "description": "This is the configuration file for the production version of your site",
   "root": {
     "description": "Path to the root of your project.  If you use a ./ this is interpretted as relative to where this file is located",
-    "value": "./test/root"
+    "value": "./root"
   },
   "minify": {
     "description": "true or false if minifiable things should be minified",

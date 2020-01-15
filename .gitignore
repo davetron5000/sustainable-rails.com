@@ -9,4 +9,6 @@ test/root/webpack_input_dev
 test/root/deploy_to_production
 test/root/webpack_input_production
 root/webpack_input_dev
-root/deployt_to_dev
+root/deploy_to_dev
+root/webpack_input_production
+root/deploy_to_production
