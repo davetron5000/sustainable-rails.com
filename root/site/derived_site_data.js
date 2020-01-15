@@ -3,13 +3,17 @@
 export default {
   "pages": [
     {
+      "title": "Chapter1",
+      "relative_url": "/chapter1.html"
+    },
+    {
       "title": "Index",
       "relative_url": "/index.html"
     }
   ],
-  "title": "Title of your site",
-  "author": "Your name as author",
-  "description": "Description of your site, for social media",
-  "twitter": "Your twitter handle",
-  "url": "Canonical url of the site"
+  "title": "Sustainable Web Development with Ruby on Rails",
+  "author": "David Bryant Copeland",
+  "description": "Website for the book Sustainable Web Development with Ruby on Rail",
+  "twitter": "@davetron5000",
+  "url": "https://sustainable-rails.com"
 }

@@ -13,6 +13,29 @@ export default class Layout extends React.Component {
     const description = SiteData.description || "Set the description in site_data.json"
     const twitter     = SiteData.twitter     || "Set your twitter handle in site_data.json"
     const url         = SiteData.url         || "Set the url in site_data.json"
+
+    let header = (
+      <header class="cf">
+        <img src="/images/cover.png" />
+        <h1>Sustainable Web Development</h1>
+        <h2>with Ruby on Rails</h2>
+        <h3>Practical Tips for Building Web Applications that Last</h3>
+        <h4>A Book by <a href="https://naildrivin5.com">David Bryant Copeland</a></h4>
+        <h5>Current Status as of Jan 14, 2020 - <a href="chapter1.html">Chapter 1 Available</a></h5>
+      </header>
+    )
+
+    if (this.props.compact) {
+      header = (
+        <header class="cf">
+          <h1><a href="/">Sustainable Web Development</a></h1>
+          <h2>with Ruby on Rails</h2>
+          <h3>Practical Tips for Building Web Applications that Last</h3>
+          <hr />
+        </header>
+      )
+    }
+
     return(
 <html lang="en">
   <head>
@@ -32,20 +55,10 @@ export default class Layout extends React.Component {
     <SiteIcons />
   </head>
   <body className="ma0 pa0">
-    <header className="tc">
-      <h1>Welcome to your New Site</h1>
-      <p>The header and footer can be edited in <code>root/site/components/Layout.jsx</code></p>
-    </header>
-    <a name="main" className="">&nbsp;</a>
-    <p>
-      Everything between this line and the one before the footer can be edited in the <code>.html.jsx</code> file corresponding to whatever link you are looking at (e.g. <code>root/site/index.html.jsx</code> if you are looking at the home page).
-    </p>
-    <hr />
-    { this.props.children }
-    <hr />
-    <p>
-      Everything above this line is in the <code>.html.jsx</code> file.  This and the rest of the page are in <code>Layout.jsx</code>.
-    </p>
+    { header }
+    <main>
+      { this.props.children }
+    </main>
     <footer className="tc bg-black white pb4 pa2">
       <a name="about"></a>
       <p className="lh-copy">
