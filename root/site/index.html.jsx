@@ -2,10 +2,18 @@ import React from "react";
 
 import Layout from "./components/Layout";
 import EmailForm from "./components/EmailForm";
+import UpdateItem from "./components/UpdateItem";
 
 import SiteData from "./derived_site_data.js"
 
 export default function(props) {
+  const updates = SiteData.updates.map( (update) => {
+    return (
+      <UpdateItem date={ update.date } iconName={update.iconName} icon={update.icon}>
+        <div dangerouslySetInnerHTML={ { __html: update.content } } />
+      </UpdateItem>
+    );
+  })
   return(
     <Layout>
     <EmailForm autofocus={true} />
@@ -16,36 +24,11 @@ export default function(props) {
     </section>
     <section className="pa3">
       <h1 className="f3 mt0">Updates</h1>
-      <ol class="list pa0 ma0 measure">
-        <li className="mv3 lh-copy">
-          <time className="b pr2" datetime="2020-01-25">Jan 25, 2020</time>
-          <span role="img" aria-label="note">📝</span>
-          I'm considering releasing the in-progress book as a beta, in order to get feedback from readers before it's published. Please
-          <span className="dn-ns di">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScpaLNdDFQIplTGSiPAwniu2Zv1qUp7Ab3Y3Vd2J2iooBCE2g/viewform?usp=sf_link">take the survey</a>.
-          </span>
-          <span className="di db-ns">
-            <a href="survey.html">take the survey</a>.
-          </span>
-        </li>
-        <li className="mv3 lh-copy">
-          <time className="b pr2" datetime="2020-01-14">Jan 14, 2020</time>
-          <span role="img" aria-label="book">📕</span>
-          Posted a <a href="chapter1.html">draft of Chapter 1</a>, which outlines the purpose and motivation for the book.
-        </li>
-        <li className="mv3 lh-copy">
-          <time className="b pr2" datetime="2019-12-12">Dec 12, 2019</time>
-          <span role="img" aria-label="note">📝</span>
-          Posted a draft <a href="#outline">Outline</a>
-        </li>
-        <li className="mv3 lh-copy">
-          <time className="b pr2" datetime="2019-11-18">Nov 18, 2019</time>
-          <span role="img" aria-label="rocket">🚀</span>
-          Created the site.
-        </li>
+      <ol className="list pa0 ma0 measure">
+        {updates}
       </ol>
     </section>
-    <section class="outline">
+    <section className="outline">
       <a name="outline"></a>
       <h1 className="f3 pv3 tc tl-ns w-100 bg-near-black near-white ph2-ns">Proposed Outline</h1>
       <section>

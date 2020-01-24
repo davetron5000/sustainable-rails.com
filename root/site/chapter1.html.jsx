@@ -49,16 +49,16 @@ export default function(props) {
           Understanding Growth at Stitch Fix
         </h1>
         <P className="baskerville">
-          During my first few months at Stitch Fix, I was asked to help improve the operations of our warehouse. There were many different processes and we had a good sense of which ones to start automating.  At the time, there was only one application—called <span class="sc">Hellblazer</span>—and it served up <code>stitchfix.com</code>.
+          During my first few months at Stitch Fix, I was asked to help improve the operations of our warehouse. There were many different processes and we had a good sense of which ones to start automating.  At the time, there was only one application—called <span className="sc">Hellblazer</span>—and it served up <code>stitchfix.com</code>.
         </P>
         <P className="baskerville">
-          If I hadn&#39;t been told anything else, the simplest thing to do would&#39;ve been to make a <code>/warehouse</code> route in <span class="sc">Hellblazer</span> and slowly add features for the associates there. But I <em>had</em> been told something else.
+          If I hadn&#39;t been told anything else, the simplest thing to do would&#39;ve been to make a <code>/warehouse</code> route in <span className="sc">Hellblazer</span> and slowly add features for the associates there. But I <em>had</em> been told something else.
         </P>
         <P className="baskerville">
           Like almost everyone at the company, the engineering team was told—very transparently—what the growth plans for the business were. It needed to grow in a certain way or the business would fail.  It was easy to extrapolate from there what that would mean for the size of the engineering team, and for the significance of the warehouse&#39;s efficiency.  It was clear that a single codebase everyone worked in would be a nightmare, and migrating away from it later would be difficult and expensive.
         </P>
         <P className="baskerville">
-          So, we created a new application that shared <span class="sc">Hellblazer</span>&#39;s database.  It would&#39;ve certainly been faster to add code to <span class="sc">Hellblazer</span> directly, but we knew doing so would burn us long-term.  As the company grew, the developers working on warehouse software were fairly isolated since they worked in a totally different codebase.  We replicated this pattern and, after six years of growth, it was clearly the right decision.
+          So, we created a new application that shared <span className="sc">Hellblazer</span>&#39;s database.  It would&#39;ve certainly been faster to add code to <span className="sc">Hellblazer</span> directly, but we knew doing so would burn us long-term.  As the company grew, the developers working on warehouse software were fairly isolated since they worked in a totally different codebase.  We replicated this pattern and, after six years of growth, it was clearly the right decision.
         </P>
         <P className="baskerville">
           But we never could&#39;ve known that without a full understanding of the company&#39;s growth plans, and long-term vision for the problems we were there to solve.
