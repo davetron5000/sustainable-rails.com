@@ -9,6 +9,10 @@ export default {
     {
       "title": "Index",
       "relative_url": "/index.html"
+    },
+    {
+      "title": "Survey",
+      "relative_url": "/survey.html"
     }
   ],
   "title": "Sustainable Web Development with Ruby on Rails",

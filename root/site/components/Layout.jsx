@@ -18,7 +18,17 @@ export default class Layout extends React.Component {
       <h4 className="mt3 ttu fw4 f4">A Book by <a className="dib f4 link underline blue" href="https://naildrivin5.com">David Bryant Copeland</a></h4>
     )
     let status = (
-      <h5 className="mt0">Current Status as of Jan 14, 2020 - <a className="link underline blue" href="chapter1.html">Chapter 1 Available</a></h5>
+      <h5 className="mt0">Current Status as of Jan 25, 2020 - {" "}
+        <span className="normal">
+          Surveying readers about doing a paid beta.  Please
+          <span className="dn-ns di">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScpaLNdDFQIplTGSiPAwniu2Zv1qUp7Ab3Y3Vd2J2iooBCE2g/viewform?usp=sf_link">take the survey</a>.
+          </span>
+          <span className="di db-ns">
+            <a href="survey.html">take the survey</a>.
+            </span>
+        </span>
+      </h5>
     )
     let image = (
       <img src="/images/cover.png" className="fl pr2 dn di-ns" width="287" />

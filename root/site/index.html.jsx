@@ -18,6 +18,17 @@ export default function(props) {
       <h1 className="f3 mt0">Updates</h1>
       <ol class="list pa0 ma0 measure">
         <li className="mv3 lh-copy">
+          <time className="b pr2" datetime="2020-01-25">Jan 25, 2020</time>
+          <span role="img" aria-label="note">📝</span>
+          I'm considering releasing the in-progress book as a beta, in order to get feedback from readers before it's published. Please
+          <span className="dn-ns di">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScpaLNdDFQIplTGSiPAwniu2Zv1qUp7Ab3Y3Vd2J2iooBCE2g/viewform?usp=sf_link">take the survey</a>.
+          </span>
+          <span className="di db-ns">
+            <a href="survey.html">take the survey</a>.
+          </span>
+        </li>
+        <li className="mv3 lh-copy">
           <time className="b pr2" datetime="2020-01-14">Jan 14, 2020</time>
           <span role="img" aria-label="book">📕</span>
           Posted a <a href="chapter1.html">draft of Chapter 1</a>, which outlines the purpose and motivation for the book.
@@ -37,9 +48,13 @@ export default function(props) {
     <section class="outline">
       <a name="outline"></a>
       <h1 className="f3 pv3 tc tl-ns w-100 bg-near-black near-white ph2-ns">Proposed Outline</h1>
-      <p className="pa2 tc tl-ns">
-        <a className="link underline blue f4" href="mailto:davetron5000+sustainablerails@gmail.com">Email me some feedback</a>
-      </p>
+      <section>
+        <h2 className="f5 mt0 ph3 tc tl-ns dib">Got feedback?</h2>
+        <ul className="ma0 pa0 dib">
+          <li className="dib-ns db pl3 pl0-ns pr3 pt1 pt0-ns f6"><a className="link underline blue" href="mailto:davetron5000+sustainablerails@gmail.com"><span role="img" aria-label="email">📧</span> Email me</a></li>
+          <li className="dib-ns db pl3 pl0-ns pt2 pt0-ns f6"><a className="link underline blue" href="https://docs.google.com/forms/d/e/1FAIpQLScN1Oze7aw0PtREuph909ZWYy_ZFPCzkLZKJvlY1BodwIuBTQ/viewform?usp=sf_link"><span role="img" aria-label="note">📝</span> Submit via Google Form</a></li>
+        </ul>
+      </section>
       <ol className="mh2 lh-copy measure">
         <li><a href="chapter1.html">Intro - what is this book for and why</a></li>
         <li>The Rails Application Architecture<ol>
@@ -63,31 +78,55 @@ export default function(props) {
           <li>Improving Production Logging with lograge</li>
         </ol></li>
         <li>The View<ol>
-            <li>URLs and Resources<ol>
-                <li>the more shenanigans in routes.rb the more difficult</li>
-                <li><code>bin/rails routes</code> is documentation</li>
-                <li>Resources don&#39;t have to be active records</li>
-              </ol>
-            </li>
-            <li>HTML<ol>
-                <li>Use ERB</li>
-                <li>Do not make an SPA unless you need one (and you don&#39;t)</li>
-                <li>Use semantic HTML</li>
-                <li>Understand how blocks work for dynamic content</li>
-              </ol>
-            </li>
-            <li>Helpers and Structure<ol>
-                <li>Helpers should be &quot;things missing from Rails&quot;</li>
-                <li>Use partials, and pass locals (keep ivars in the main view)</li>
-              </ol>
-            </li>
+          <li>Routes and URLs<ol>
+            <li>Always Use Canonical Routes that Conform to Rails’ Defaults</li>
+            <li>Never Configure Routes That Aren’t Being Used</li>
+            <li>Vanity URLs Should Redirect to a Canonical Route</li>
+            <li>Don’t Create Custom Actions, Create More Resources</li>
+            <li>Be Wary of Nested Routes<ol>
+              <li>Create Sub-Resources Judiciously</li>
+              <li>Namespacing Might be an Architecture Smell</li>
+            </ol></li>
+          </ol></li>
+          <li>HTML Templates<ol>
+            <li>Use Semantic HTML<ol>
+              <li>Build Views by Applying Meaningful Tags to Content</li>
+              <li>Use &lt;div&gt; and &lt;span&gt; for Styling</li>
+            </ol></li>
+            <li>Build Templates Around Their Controller’s Resource as a Singleivar<ol>
+              <li>Expose a Single ivar, Named for the Resource</li>
+              <li>Judiciously Expose Authentication Details and Reference Data Separately</li>
+            </ol></li>
+            <li>Think of Partials as Re-usable Components<ol>
+              <li>Don’t Use Layouts or Helpers for Re-usable Components</li>
+              <li>Use Partials for Reusable Components Only</li>
+              <li>Use Locals to Pass Parameters to Partials, not ivars</li>
+            </ol></li>
+            <li>Just Use ERB </li>
+          </ol></li>
+          <li>Helpers<ol>
+            <li>Don’t Conflate Helpers with Your Domain</li>
+            <li>Helpers Are Best At Markup and Formatting<ol>
+              <li>Wrapping Complex Partials</li>
+              <li>Small, Inline Components</li>
+            </ol></li>
+            <li>Presenters, Decorators, and View Models Have Their Own Problems<ol>
+              <li>Overview of the Presenter Pattern</li>
+              <li>Problems with Presenters</li>
+              <li>Taming Problems with Presenters</li>
+            </ol></li>
+            <li>Use Rails’ APIs to Generate Markup</li>
+            <li>Helpers Should Be Tested and Thus Testable</li>
+          </ol></li>
             <li>CSS<ol>
-                <li>Understand Design Systems</li>
-                <li>Use a framework, and I recommend Tachyons</li>
-                <li>divs are for styling</li>
-                <li>Your design should conform to the design system - how to have a conversation with the creative team</li>
-              </ol>
-            </li>
+              <li>You Need to Actually Learn CSS</li>
+              <li>Use a Design System</li>
+              <li>Choose a CSS Approach and Stick With It<ol>
+                <li>The Case for Functional CSS</li>
+                <li>Problems with Semantic CSS</li>
+              </ol></li>
+              <li>Learn the Mobile-First Workflow</li>
+            </ol></li>
             <li>JavaScript<ol>
                 <li>Beware Rails&#39; ajaxy defaults</li>
                 <li>Risks with the way Rails handles Ajax and JavaScript</li>
