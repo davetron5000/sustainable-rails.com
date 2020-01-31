@@ -22,6 +22,12 @@ export default {
   "url": "https://sustainable-rails.com",
   "updates": [
     {
+      "date": "2020-01-30",
+      "iconName": "note",
+      "icon": "📝",
+      "content": "Updated TOC with the sections for the CSS chapter"
+    },
+    {
       "date": "2020-01-25",
       "iconName": "note",
       "icon": "📝",

@@ -13,20 +13,18 @@ export default class Layout extends React.Component {
     const description = SiteData.description || "Set the description in site_data.json"
     const twitter     = SiteData.twitter     || "Set your twitter handle in site_data.json"
     const url         = SiteData.url         || "Set the url in site_data.json"
+    const latestUpdate = SiteData.updates[0];
+    const date = new Date(latestUpdate.date)
+    const formattedDate = date.toLocaleDateString("en-US", {  month: "short", day: "numeric", year: "numeric" })
+
 
     let byline = (
       <h4 className="mt3 ttu fw4 f4">A Book by <a className="dib f4 link underline blue" href="https://naildrivin5.com">David Bryant Copeland</a></h4>
     )
     let status = (
-      <h5 className="mt0">Current Status as of Jan 25, 2020 - {" "}
+      <h5 className="mt0">Current Status as of { formattedDate } - { " " }
         <span className="normal">
-          Surveying readers about doing a paid beta.  Please
-          <span className="dn-ns di">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScpaLNdDFQIplTGSiPAwniu2Zv1qUp7Ab3Y3Vd2J2iooBCE2g/viewform?usp=sf_link">take the survey</a>.
-          </span>
-          <span className="di db-ns">
-            <a href="survey.html">take the survey</a>.
-            </span>
+          { latestUpdate.content }
         </span>
       </h5>
     )

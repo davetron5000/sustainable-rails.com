@@ -102,13 +102,13 @@ export default function(props) {
             <li>Helpers Should Be Tested and Thus Testable</li>
           </ol></li>
             <li>CSS<ol>
-              <li>You Need to Actually Learn CSS</li>
-              <li>Use a Design System</li>
-              <li>Choose a CSS Approach and Stick With It<ol>
-                <li>The Case for Functional CSS</li>
-                <li>Problems with Semantic CSS</li>
+              <li>Adopt a Design System</li>
+              <li>Adopt a CSS Strategy<ol>
+                <li>Using a Framework</li>
+                <li>Object-Oriented CSS</li>
+                <li>Functional CSS</li>
               </ol></li>
-              <li>Learn the Mobile-First Workflow</li>
+              <li>Create a Living Style Guide to Document Your Design System and CSS Strategy</li>
             </ol></li>
             <li>JavaScript<ol>
                 <li>Beware Rails&#39; ajaxy defaults</li>
