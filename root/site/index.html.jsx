@@ -29,7 +29,7 @@ export default function(props) {
       </ol>
     </section>
     <section className="outline">
-      <a name="outline"></a>
+      <a name="outline">&nbsp;</a>
       <h1 className="f3 pv3 tc tl-ns w-100 bg-near-black near-white ph2-ns">Proposed Outline</h1>
       <section>
         <h2 className="f5 mt0 ph3 tc tl-ns dib">Got feedback?</h2>
