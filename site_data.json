@@ -6,6 +6,12 @@
   "url": "https://sustainable-rails.com",
   "updates": [
     {
+      "date": "2020-02-21",
+      "iconName": "note",
+      "icon": "📝",
+      "content": "Updated TOC with the sections for rest of the view plus improved future sections"
+    },
+    {
       "date": "2020-01-30",
       "iconName": "note",
       "icon": "📝",

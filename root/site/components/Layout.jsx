@@ -26,6 +26,7 @@ export default class Layout extends React.Component {
         <span className="normal">
           { latestUpdate.content }
         </span>
+        <a className="link underline blue f6 db mt2 normal" href="#outline">View the Table of Contents…</a>
       </h5>
     )
     let image = (
