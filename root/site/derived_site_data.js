@@ -13,6 +13,10 @@ export default {
     {
       "title": "Survey",
       "relative_url": "/survey.html"
+    },
+    {
+      "title": "Tech_reviewers",
+      "relative_url": "/tech_reviewers.html"
     }
   ],
   "title": "Sustainable Web Development with Ruby on Rails",
