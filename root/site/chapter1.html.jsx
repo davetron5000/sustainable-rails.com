@@ -134,7 +134,7 @@ export default function(props) {
     </article>
       <footer className="bt mt2 pt2">
     <div className="pa3 tc ma3">
-      <a href="#" className="link f4-ns f5 nowrap fw7 br3 mt2 ph4 pv2 w-25-ns grow bg-dark-green near-white pointer di">
+      <a href={ SiteData.buy_now_link } className="link f4-ns f5 nowrap fw7 br3 mt2 ph4 pv2 w-25-ns grow bg-dark-green near-white pointer di">
         { "Buy Beta Now "  + SiteData.beta_price }
       </a>
     </div>

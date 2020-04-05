@@ -18,7 +18,7 @@ export default function(props) {
   return(
     <Layout>
     <div className="pa3-ns pa0 tc tl-ns ma3-ns ma0 mb3">
-      <a href="#" className="link f4-ns f5 nowrap fw7 br3 mt2 ph4 pv2 w-25-ns grow bg-dark-green near-white pointer di">
+      <a href={ SiteData.buy_now_link } className="link f4-ns f5 nowrap fw7 br3 mt2 ph4 pv2 w-25-ns grow bg-dark-green near-white pointer di">
         { "Buy Beta Now "  + SiteData.beta_price }
       </a>
     </div>
