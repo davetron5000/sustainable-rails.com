@@ -11,12 +11,12 @@ export default {
       "relative_url": "/index.html"
     },
     {
-      "title": "Survey",
-      "relative_url": "/survey.html"
-    },
-    {
       "title": "Tech_reviewers",
       "relative_url": "/tech_reviewers.html"
+    },
+    {
+      "title": "Thanks",
+      "relative_url": "/thanks.html"
     }
   ],
   "title": "Sustainable Web Development with Ruby on Rails",
@@ -24,7 +24,21 @@ export default {
   "description": "Website for the book Sustainable Web Development with Ruby on Rail",
   "twitter": "@davetron5000",
   "url": "https://sustainable-rails.com",
+  "beta_price": "$29.95",
+  "buy_now_link": "https://sowl.co/boqdo7",
+  "tss": {
+    "link": "http://bit.ly/dcsweng"
+  },
+  "solid_not_solid": {
+    "link": "http://bit.ly/buy-not-solid"
+  },
   "updates": [
+    {
+      "date": "2020-04-07",
+      "iconName": "rocket",
+      "icon": "🚀",
+      "content": "Beta release! <a class=\"link underline blue b\" href=\"https://sowl.co/boqdo7\">Buy now</a> at an introductory lower price!"
+    },
     {
       "date": "2020-02-21",
       "iconName": "note",
@@ -38,22 +52,16 @@ export default {
       "content": "Updated TOC with the sections for the CSS chapter"
     },
     {
-      "date": "2020-01-25",
-      "iconName": "note",
-      "icon": "📝",
-      "content": "I'm considering releasing the in-progress book as a beta, in order to get feedback from readers before it's published. Please\n<span class=\"dn-ns di\">\n<a href=\"https://docs.google.com/forms/d/e/1FAIpQLScpaLNdDFQIplTGSiPAwniu2Zv1qUp7Ab3Y3Vd2J2iooBCE2g/viewform?usp=sf_link\">take the survey</a>.\n</span>\n<span class=\"dn di-ns\">\n<a href=\"survey.html\">take the survey</a>.\n</span>"
-    },
-    {
       "date": "2020-01-14",
       "iconName": "book",
       "icon": "📕",
-      "content": "Posted a <a href=\"chapter1.html\">draft of Chapter 1</a>, which outlines the purpose and motivation for the book."
+      "content": "Posted a <a class=\"link underline blue\" href=\"chapter1.html\">draft of Chapter 1</a>, which outlines the purpose and motivation for the book."
     },
     {
       "date": "2019-12-12",
       "iconName": "note",
       "icon": "📝",
-      "content": "Posted a draft <a href=\"#outline\">Outline</a>"
+      "content": "Posted a draft <a class=\"link underline blue\" href=\"#outline\">Outline</a>"
     },
     {
       "date": "2019-11-18",

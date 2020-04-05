@@ -133,8 +133,11 @@ export default function(props) {
       <P>So, let&#39;s move on.  Because this book is about Ruby on Rails, I want to give an overview of the application architecture Rails provides by default, and how those pieces relate to each other.  From that basis, we can then deep dive into each part of Rails and learn how to use it sustainably.</P>
     </article>
       <footer className="bt mt2 pt2">
-        <h1 className="tc tl-ns ph3 f5">Join the Mailing List For Updates</h1>
-        <EmailForm />
+    <div className="pa3 tc ma3">
+      <a href="#" className="link f4-ns f5 nowrap fw7 br3 mt2 ph4 pv2 w-25-ns grow bg-dark-green near-white pointer di">
+        { "Buy Beta Now "  + SiteData.beta_price }
+      </a>
+    </div>
       </footer>
   </Layout>
   );

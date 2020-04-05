@@ -17,10 +17,14 @@ export default function(props) {
   })
   return(
     <Layout>
-    <EmailForm autofocus={true} />
+    <div className="pa3-ns pa0 tc tl-ns ma3-ns ma0 mb3">
+      <a href="#" className="link f4-ns f5 nowrap fw7 br3 mt2 ph4 pv2 w-25-ns grow bg-dark-green near-white pointer di">
+        { "Buy Beta Now "  + SiteData.beta_price }
+      </a>
+    </div>
     <section className="pa3 ma0 bt">
       <p className="lh-copy measure">
-        I will be working on this book over the next several months. If you are interested in getting early access, updates, or any other news about this subject, sign up below  The mailing list should be low-traffic, but will allow you to review in-development parts of the book and even get a discount when the book goes on sale.
+        I will be releasing new chapters on a regular basis. If you purchase the beta, you will be notified via email when new versions are available.  If you have purchased the beta and have feedback, please use <a className="link underline blue" href="https://docs.google.com/forms/d/e/1FAIpQLScN1Oze7aw0PtREuph909ZWYy_ZFPCzkLZKJvlY1BodwIuBTQ/viewform?usp=sf_link">this form</a>.
       </p>
     </section>
     <section className="pa3">

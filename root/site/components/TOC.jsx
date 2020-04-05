@@ -47,6 +47,14 @@ export default class TOC extends React.Component {
             </ol>
           </li>
           <li className="f5 fw5">
+            Business Logic (Does Not Go in Active Records)
+            <ol>
+              <li className="f6 normal">Business Logic is What Makes Your App Special…and Complex</li>
+              <li className="f6 normal">Bugs in Commonly-Used Classes Have Wide Effects</li>
+              <li className="f6 normal">Business Logic in Active Records Puts Churn and Complexity in Critical Classes</li>
+            </ol>
+          </li>
+          <li className="f5 fw5">
             The View Layer
           </li>
           <li className="f5 fw5">
@@ -63,8 +71,8 @@ export default class TOC extends React.Component {
             HTML Templates
             <ol>
               <li className="f6 normal">Use Semantic HTML</li>
-              <li className="f6 normal">Build Templates Around Their Controller’s Resource as a Single ivar</li>
-              <li className="f6 normal">Think of Partials as Re-usable Components.</li>
+              <li className="f6 normal">Build Templates Around Their Controller’s Resource as a Single Instance Variable</li>
+              <li className="f6 normal">Think of Partials as Re-usable Components</li>
               <li className="f6 normal">Just Use ERB</li>
             </ol>
           </li>
@@ -87,7 +95,7 @@ export default class TOC extends React.Component {
             </ol>
           </li>
           <li className="f5 fw5">
-            JavaScript
+            Minimize JavaScript
             <ol>
               <li className="f6 normal">How and Why JavaScript is a Serious Liability</li>
               <li className="f6 normal">Embrace Server-Rendered Rails Views</li>
@@ -95,20 +103,63 @@ export default class TOC extends React.Component {
             </ol>
           </li>
           <li className="f5 fw5">
-            App-Like JavaScript
+            Carefully Manage the JavaScript You Need
             <ol>
-              <li className="f6 normal">Server-Rendered JavaScript Should Call into Managed JavaScript in Packs</li>
-              <li className="f6 normal">Manage React Code with the react-rails Gem</li>
-              <li className="f6 normal">Libraries Like React Can Be More Complex Than Partial-Based Equivalents</li>
+              <li className="f6 normal">Embrace Plain JavaScript for Basic Interactions</li>
+              <li className="f6 normal">Carefully Choose One Framework When You Need It</li>
+              <li className="f6 normal">Unit Test As Much of Your JavaScript as You Can</li>
             </ol>
           </li>
           <li className="f5 fw5">
             Testing The View
             <ol>
               <li className="f6 normal">Understand the Value and Cost of Tests</li>
-              <li className="f6 normal">Sustainable System Testing Basics</li>
-              <li className="f6 normal">Sustaining System Tests over Time</li>
-              <li className="f6 normal">Unit Testing JavaScript with Jest</li>
+              <li className="f6 normal">Use :rack_test for non-JavaScript User Flows</li>
+              <li className="f6 normal">Test Against Default Markup and Content Initially</li>
+              <li className="f6 normal">Cultivate Explicit Diagnostic Tools to Debug Test Failures</li>
+              <li className="f6 normal">Fake The Back-end To Get System Tests Passing</li>
+              <li className="f6 normal">Test JavaScript Interactions with a Real Browser</li>
+            </ol>
+          </li>
+        </ol>
+          <div className="bb ma0 ph3 tc tl-ns w-100 w-50-ns fw5 f5 dark-red nowrap">
+            <span role="img" aria-label="construction-barrier">🚧</span>{ " "}
+            Beta Currently Stops Here{ " "}
+            <span role="img" aria-label="construction-barrier">🚧</span>{ " "}
+          </div>
+        <ol className="mh2 lh-copy measure" start="14">
+          <li className="f5 fw5">
+            Models, Part 1
+            <ol>
+              <li className="f6 normal">ApplicationModel is for Database Access</li>
+              <li className="f6 normal">ActiveModel is for Resource Modeling</li>
+            </ol>
+          </li>
+          <li className="f5 fw5">
+            The Database
+            <ol>
+              <li className="f6 normal">Data is More Important Than Your App</li>
+              <li className="f6 normal">Data Modeling Basics</li>
+              <li className="f6 normal">Production-safe Migrations</li>
+              <li className="f6 normal">Data Migration Techniques</li>
+              <li className="f6 normal">Advanced Data Modeling Techniques</li>
+              <li className="f6 normal">Testing Your Schema</li>
+            </ol>
+          </li>
+          <li className="f5 fw5">
+            Business Logic Class Design
+            <ol>
+              <li className="f6 normal">Stateless, Isolated Classes</li>
+              <li className="f6 normal">Rich Result Objects</li>
+              <li className="f6 normal">Query Logic is Business Logic</li>
+            </ol>
+          </li>
+          <li className="f5 fw5">
+            Models, Part 2
+            <ol>
+              <li className="f6 normal">Don’t Conflate Scopes with Business Logic</li>
+              <li className="f6 normal">Validations Don’t Provide Data Integrity</li>
+              <li className="f6 normal">How to (Barely) Use Callbacks</li>
             </ol>
           </li>
           <li className="f5 fw5">
@@ -129,36 +180,6 @@ export default class TOC extends React.Component {
             </ol>
           </li>
           <li className="f5 fw5">
-            The Database
-            <ol>
-              <li className="f6 normal">Data is More Important Than Your App</li>
-              <li className="f6 normal">Data Modeling Basics</li>
-              <li className="f6 normal">Production-safe Migrations</li>
-              <li className="f6 normal">Data Migration Techniques</li>
-              <li className="f6 normal">Advanced Data Modeling Techniques</li>
-              <li className="f6 normal">Testing Your Schema</li>
-            </ol>
-          </li>
-          <li className="f5 fw5">
-            Models
-            <ol>
-              <li className="f6 normal">ApplicationModel is for Database Access</li>
-              <li className="f6 normal">ActiveModel is for Resource Modeling</li>
-            </ol>
-          </li>
-          <li className="f5 fw5">
-            Business Logic
-          </li>
-          <li className="f5 fw5">
-            Models, Revisited
-            <ol>
-              <li className="f6 normal">Embrace SQL</li>
-              <li className="f6 normal">Validations Don’t Provide Data Integrity</li>
-              <li className="f6 normal">Arel will Confuse Everyone—Just Use where</li>
-              <li className="f6 normal">How to (Barely) Use Callbacks</li>
-            </ol>
-          </li>
-          <li className="f5 fw5">
             Jobs
             <ol>
               <li className="f6 normal">Jobs Must Be Idempotent</li>
@@ -175,6 +196,15 @@ export default class TOC extends React.Component {
             </ol>
           </li>
           <li className="f5 fw5">
+            Sustainable Process and Workflows
+            <ol>
+              <li className="f6 normal">Continuous Integration</li>
+              <li className="f6 normal">Leverage Generators and Templates over Documentation</li>
+              <li className="f6 normal">Frequent Dependency Updates</li>
+              <li className="f6 normal">Railties Can Distribute Shared Configuration</li>
+            </ol>
+          </li>
+          <li className="f5 fw5">
             Operations
             <ol>
               <li className="f6 normal">Why Observability Matters</li>
@@ -182,6 +212,7 @@ export default class TOC extends React.Component {
               <li className="f6 normal">Monitor Things You Want To Know About</li>
               <li className="f6 normal">Managing Unhandled Exceptions</li>
               <li className="f6 normal">Measure Performance</li>
+              <li className="f6 normal">Managing Secrets, Keys, and Passwords</li>
             </ol>
           </li>
           <li className="f5 fw5">

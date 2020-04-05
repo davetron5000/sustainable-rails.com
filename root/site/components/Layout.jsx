@@ -14,17 +14,16 @@ export default class Layout extends React.Component {
     const twitter     = SiteData.twitter     || "Set your twitter handle in site_data.json"
     const url         = SiteData.url         || "Set the url in site_data.json"
     const latestUpdate = SiteData.updates[0];
-    const date = new Date(latestUpdate.date)
-    const formattedDate = date.toLocaleDateString("en-US", {  month: "short", day: "numeric", year: "numeric" })
+    const formattedDate = latestUpdate.date
 
 
     let byline = (
       <h4 className="mt3 ttu fw4 f4">A Book by <a className="dib f4 link underline blue" href="https://naildrivin5.com">David Bryant Copeland</a></h4>
     )
     let status = (
-      <h5 className="mt0">Current Status as of { formattedDate } - { " " }
-        <span className="normal">
-          { latestUpdate.content }
+      <h5 className="mt0 lh-title">Current Status as of { formattedDate } - { " " }
+        <span className="normal mb3 db">
+          <div dangerouslySetInnerHTML={ { __html: latestUpdate.content } } />
         </span>
         <a className="link underline blue f6 db mt2 normal" href="#outline">View the Table of Contents…</a>
       </h5>
