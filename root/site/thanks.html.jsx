@@ -10,8 +10,7 @@ export default function(props) {
       <header className="pa3">
         <h1 className="f1 tc tl-ns">Thanks for buying!</h1>
         <p className="lh-copy measure">
-          I hope you enjoy the book!  I'd love to hear your feedback or thoughts, so please 
-          use <a className="link underline blue" href="https://docs.google.com/forms/d/e/1FAIpQLScN1Oze7aw0PtREuph909ZWYy_ZFPCzkLZKJvlY1BodwIuBTQ/viewform?usp=sf_link">this form</a> to send any feedback my way.
+          An email is on its way to you right now with a link where you can download the book.  I hope you enjoy it!  I'd love to hear your feedback or thoughts, so please use <a className="link underline blue" href="https://docs.google.com/forms/d/e/1FAIpQLScN1Oze7aw0PtREuph909ZWYy_ZFPCzkLZKJvlY1BodwIuBTQ/viewform?usp=sf_link">this form</a> to send any feedback my way.
         </p>
         <p className="lh-copy measure">
           As a thank-you for supporting my work, here is a code you can use to get a discount on my other works, if you are interested.
