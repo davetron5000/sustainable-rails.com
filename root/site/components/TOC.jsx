@@ -6,7 +6,7 @@ export default class TOC extends React.Component {
       <React.Fragment>
         <ol className="mh2 lh-copy measure">
           <li className="f5 fw5">
-            Why This Book Exists
+            <a href="chapter1.html">Why This Book Exists (read full chapter)</a>
             <ol>
               <li className="f6 normal">What is Sustainability?</li>
               <li className="f6 normal">Why Care About Sustainability?</li>
@@ -121,20 +121,20 @@ export default class TOC extends React.Component {
               <li className="f6 normal">Test JavaScript Interactions with a Real Browser</li>
             </ol>
           </li>
+          <li className="f5 fw5">
+            Models, Part 1
+            <ol>
+              <li className="f6 normal">Active Record is for Database Access</li>
+              <li className="f6 normal">Active Model is for Resource Modeling</li>
+            </ol>
+          </li>
         </ol>
           <div className="bb ma0 ph3 tc tl-ns w-100 w-50-ns fw5 f5 dark-red nowrap">
             <span role="img" aria-label="construction-barrier">🚧</span>{ " "}
             Beta Currently Stops Here{ " "}
             <span role="img" aria-label="construction-barrier">🚧</span>{ " "}
           </div>
-        <ol className="mh2 lh-copy measure" start="14">
-          <li className="f5 fw5">
-            Models, Part 1
-            <ol>
-              <li className="f6 normal">ApplicationModel is for Database Access</li>
-              <li className="f6 normal">ActiveModel is for Resource Modeling</li>
-            </ol>
-          </li>
+        <ol className="mh2 lh-copy measure" start="15">
           <li className="f5 fw5">
             The Database
             <ol>
@@ -157,9 +157,9 @@ export default class TOC extends React.Component {
           <li className="f5 fw5">
             Models, Part 2
             <ol>
-              <li className="f6 normal">Don’t Conflate Scopes with Business Logic</li>
               <li className="f6 normal">Validations Don’t Provide Data Integrity</li>
               <li className="f6 normal">How to (Barely) Use Callbacks</li>
+              <li className="f6 normal">Model Testing Strategy</li>
             </ol>
           </li>
           <li className="f5 fw5">

@@ -34,6 +34,12 @@ export default {
   },
   "updates": [
     {
+      "date": "2020-04-15",
+      "iconName": "weightlifter",
+      "icon": "🏋️‍♂️",
+      "content": "First Beta update with a new chapter on Models. <a class=\"link underline blue b\" href=\"https://sowl.co/boqdo7\">Buy now</a> at an introductory low price!"
+    },
+    {
       "date": "2020-04-07",
       "iconName": "rocket",
       "icon": "🚀",

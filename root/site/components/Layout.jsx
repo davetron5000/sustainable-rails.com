@@ -21,12 +21,22 @@ export default class Layout extends React.Component {
       <h4 className="mt3 ttu fw4 f4">A Book by <a className="dib f4 link underline blue" href="https://naildrivin5.com">David Bryant Copeland</a></h4>
     )
     let status = (
-      <h5 className="mt0 lh-title">Current Status as of { formattedDate } - { " " }
-        <span className="normal mb3 db">
-          <div dangerouslySetInnerHTML={ { __html: latestUpdate.content } } />
-        </span>
-        <a className="link underline blue f6 db mt2 normal" href="#outline">View the Table of Contents…</a>
-      </h5>
+      <React.Fragment>
+        <h5 className="mt0 lh-title">Current Status as of { formattedDate } - { " " }
+          <span className="normal mb3 db">
+            <div dangerouslySetInnerHTML={ { __html: latestUpdate.content } } />
+          </span>
+        </h5>
+        <h6 className="f5 ma0 normal i">What's inside?</h6>
+        <ul className="list mt0">
+          <li>
+            <a className="link underline blue f6 db mt2 normal" href="#outline">View the Table of Contents…</a>
+          </li>
+          <li>
+            <a className="link underline blue f6 db mt2 normal" href="chapter1.html">Read all of Chapter 1: "Why this book exists"</a>
+          </li>
+        </ul>
+      </React.Fragment>
     )
     let image = (
       <img src="/images/cover.png" className="fl pr2 dn di-ns" width="287" />
