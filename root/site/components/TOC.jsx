@@ -52,6 +52,7 @@ export default class TOC extends React.Component {
               <li className="f6 normal">Business Logic is What Makes Your App Special…and Complex</li>
               <li className="f6 normal">Bugs in Commonly-Used Classes Have Wide Effects</li>
               <li className="f6 normal">Business Logic in Active Records Puts Churn and Complexity in Critical Classes</li>
+              <li className="f6 normal">Example Design of a Feature</li>
             </ol>
           </li>
           <li className="f5 fw5">
@@ -128,24 +129,23 @@ export default class TOC extends React.Component {
               <li className="f6 normal">Active Model is for Resource Modeling</li>
             </ol>
           </li>
+          <li className="f5 fw5">
+            The Database
+            <ol>
+              <li className="f6 normal">Logical and Physical Data Models</li>
+              <li className="f6 normal">Create a Logical Model to Build Consensus</li>
+              <li className="f6 normal">Planning the Physical Model to Enforce Correctness</li>
+              <li className="f6 normal">Creating Correct Migrations</li>
+              <li className="f6 normal">Writing Tests for Database Constraints</li>
+            </ol>
+          </li>
         </ol>
           <div className="bb ma0 ph3 tc tl-ns w-100 w-50-ns fw5 f5 dark-red nowrap">
             <span role="img" aria-label="construction-barrier">🚧</span>{ " "}
             Beta Currently Stops Here{ " "}
             <span role="img" aria-label="construction-barrier">🚧</span>{ " "}
           </div>
-        <ol className="mh2 lh-copy measure" start="15">
-          <li className="f5 fw5">
-            The Database
-            <ol>
-              <li className="f6 normal">Data is More Important Than Your App</li>
-              <li className="f6 normal">Data Modeling Basics</li>
-              <li className="f6 normal">Production-safe Migrations</li>
-              <li className="f6 normal">Data Migration Techniques</li>
-              <li className="f6 normal">Advanced Data Modeling Techniques</li>
-              <li className="f6 normal">Testing Your Schema</li>
-            </ol>
-          </li>
+        <ol className="mh2 lh-copy measure" start="16">
           <li className="f5 fw5">
             Business Logic Class Design
             <ol>
@@ -194,6 +194,9 @@ export default class TOC extends React.Component {
               <li className="f6 normal">Mailboxes</li>
               <li className="f6 normal">Rake Tasks</li>
             </ol>
+          </li>
+          <li className="f5 fw5">
+            Production-Safe Database Changes
           </li>
           <li className="f5 fw5">
             Sustainable Process and Workflows

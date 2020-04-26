@@ -15,6 +15,12 @@
   "updates": [
     {
       "date": "2020-04-15",
+      "iconName": "computer",
+      "icon": "🖥",
+      "content": "New chapter on database design and modeling. <a class=\"link underline blue b\" href=\"https://sowl.co/boqdo7\">Buy now</a> at the low beta price!"
+    },
+    {
+      "date": "2020-04-15",
       "iconName": "weightlifter",
       "icon": "🏋️‍♂️",
       "content": "First Beta update with a new chapter on Models. <a class=\"link underline blue b\" href=\"https://sowl.co/boqdo7\">Buy now</a> at an introductory low price!"
