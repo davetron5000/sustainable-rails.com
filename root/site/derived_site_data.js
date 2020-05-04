@@ -34,7 +34,13 @@ export default {
   },
   "updates": [
     {
-      "date": "2020-04-15",
+      "date": "2020-05-04",
+      "iconName": "levitatingman",
+      "icon": "🕴",
+      "content": "The business logic code chapter is ready.  <a class=\"link underline blue b\" href=\"https://sowl.co/boqdo7\">Buy now</a> at the low beta price!"
+    },
+    {
+      "date": "2020-04-27",
       "iconName": "computer",
       "icon": "🖥",
       "content": "New chapter on database design and modeling. <a class=\"link underline blue b\" href=\"https://sowl.co/boqdo7\">Buy now</a> at the low beta price!"

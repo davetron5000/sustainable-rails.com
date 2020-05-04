@@ -139,21 +139,21 @@ export default class TOC extends React.Component {
               <li className="f6 normal">Writing Tests for Database Constraints</li>
             </ol>
           </li>
+          <li className="f5 fw5">
+            Business Logic Code Should Be Thought of as a Seam
+            <ol>
+              <li className="f6 normal">Business Logic Code Must Reveal Behavior</li>
+              <li className="f6 normal">Services are Stateless, Explicitly-Named Classes with Explicitly-Named Methods</li>
+              <li className="f6 normal">Alternate Implementation Patterns You Might Want to Avoid</li>
+            </ol>
+          </li>
         </ol>
           <div className="bb ma0 ph3 tc tl-ns w-100 w-50-ns fw5 f5 dark-red nowrap">
             <span role="img" aria-label="construction-barrier">🚧</span>{ " "}
             Beta Currently Stops Here{ " "}
             <span role="img" aria-label="construction-barrier">🚧</span>{ " "}
           </div>
-        <ol className="mh2 lh-copy measure" start="16">
-          <li className="f5 fw5">
-            Business Logic Class Design
-            <ol>
-              <li className="f6 normal">Stateless, Isolated Classes</li>
-              <li className="f6 normal">Rich Result Objects</li>
-              <li className="f6 normal">Query Logic is Business Logic</li>
-            </ol>
-          </li>
+        <ol className="mh2 lh-copy measure" start="17">
           <li className="f5 fw5">
             Models, Part 2
             <ol>
@@ -161,6 +161,9 @@ export default class TOC extends React.Component {
               <li className="f6 normal">How to (Barely) Use Callbacks</li>
               <li className="f6 normal">Model Testing Strategy</li>
             </ol>
+          </li>
+          <li className="f5 fw5">
+            An End-to-End Example
           </li>
           <li className="f5 fw5">
             Controllers
