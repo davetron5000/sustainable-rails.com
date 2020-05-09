@@ -34,6 +34,12 @@ export default {
   },
   "updates": [
     {
+      "date": "2020-05-11",
+      "iconName": "nails",
+      "icon": "💅",
+      "content": "New chapter: Models, Part 2, which covers validations, scopes, and the dreaded callback. Also a big thanks to Sean Miller for identifying tons of typos and areas lacking clarity.  Additionally, I rescinded the guidance to just remove Turbolinks as my main concern is been remediated. Probably a long time ago.  <a class=\"link underline blue b\" href=\"https://sowl.co/boqdo7\">Buy now</a> at the low beta price!"
+    },
+    {
       "date": "2020-05-04",
       "iconName": "levitatingman",
       "icon": "🕴",

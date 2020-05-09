@@ -100,7 +100,7 @@ export default class TOC extends React.Component {
             <ol>
               <li className="f6 normal">How and Why JavaScript is a Serious Liability</li>
               <li className="f6 normal">Embrace Server-Rendered Rails Views</li>
-              <li className="f6 normal">Disable Turbolinks and Remote-Forms-By-Default</li>
+              <li className="f6 normal">Disable Remote-Forms-By-Default and Tweak Turbolinks</li>
             </ol>
           </li>
           <li className="f5 fw5">
@@ -147,21 +147,23 @@ export default class TOC extends React.Component {
               <li className="f6 normal">Alternate Implementation Patterns You Might Want to Avoid</li>
             </ol>
           </li>
+          <li className="f5 fw5">
+            Models, Part 2
+            <ol>
+              <li className="f6 normal">Validations Don’t Provide Data Integrity</li>
+              <li className="f6 normal">Validations Are Awesome For User Experience</li>
+              <li className="f6 normal">How to (Barely) Use Callbacks</li>
+              <li className="f6 normal">Scopes are Often Business Logic and Belong Elsewhere</li>
+              <li className="f6 normal">Model Testing Strategy</li>
+            </ol>
+          </li>
         </ol>
           <div className="bb ma0 ph3 tc tl-ns w-100 w-50-ns fw5 f5 dark-red nowrap">
             <span role="img" aria-label="construction-barrier">🚧</span>{ " "}
             Beta Currently Stops Here{ " "}
             <span role="img" aria-label="construction-barrier">🚧</span>{ " "}
           </div>
-        <ol className="mh2 lh-copy measure" start="17">
-          <li className="f5 fw5">
-            Models, Part 2
-            <ol>
-              <li className="f6 normal">Validations Don’t Provide Data Integrity</li>
-              <li className="f6 normal">How to (Barely) Use Callbacks</li>
-              <li className="f6 normal">Model Testing Strategy</li>
-            </ol>
-          </li>
+        <ol className="mh2 lh-copy measure" start="18">
           <li className="f5 fw5">
             An End-to-End Example
           </li>
