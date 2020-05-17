@@ -157,16 +157,24 @@ export default class TOC extends React.Component {
               <li className="f6 normal">Model Testing Strategy</li>
             </ol>
           </li>
+          <li className="f5 fw5">
+            End-to-End Example
+            <ol>
+              <li className="f6 normal">Example Requirements</li>
+              <li className="f6 normal">Building the UI First</li>
+              <li className="f6 normal">Writing a System Test</li>
+              <li className="f6 normal">Sketch Business Logic and Define the Seam</li>
+              <li className="f6 normal">Fully Implement and Test Business Logic</li>
+              <li className="f6 normal">Reflecting on What We’ve Built</li>
+            </ol>
+          </li>
         </ol>
           <div className="bb ma0 ph3 tc tl-ns w-100 w-50-ns fw5 f5 dark-red nowrap">
             <span role="img" aria-label="construction-barrier">🚧</span>{ " "}
             Beta Currently Stops Here{ " "}
             <span role="img" aria-label="construction-barrier">🚧</span>{ " "}
           </div>
-        <ol className="mh2 lh-copy measure" start="18">
-          <li className="f5 fw5">
-            An End-to-End Example
-          </li>
+        <ol className="mh2 lh-copy measure" start="19">
           <li className="f5 fw5">
             Controllers
             <ol>

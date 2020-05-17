@@ -34,10 +34,16 @@ export default {
   },
   "updates": [
     {
+      "date": "2020-05-17",
+      "iconName": "teacher",
+      "icon": "👩‍🏫",
+      "content": "New chapter with an end-to-end example. This shows the process of building a UI, writing a system test, and managing business logic. It brings together everything in the book up to this point.  <a class=\"link underline blue b\" href=\"https://sowl.co/boqdo7\">Buy now</a> at the low beta price!"
+    },
+    {
       "date": "2020-05-11",
       "iconName": "nails",
       "icon": "💅",
-      "content": "New chapter: Models, Part 2, which covers validations, scopes, and the dreaded callback. Also a big thanks to Sean Miller for identifying tons of typos and areas lacking clarity.  Additionally, I rescinded the guidance to just remove Turbolinks as my main concern is been remediated. Probably a long time ago.  <a class=\"link underline blue b\" href=\"https://sowl.co/boqdo7\">Buy now</a> at the low beta price!"
+      "content": "New chapter: Models, Part 2, which covers validations, scopes, and the dreaded callback. Also a big thanks to Sean Miller for identifying tons of typos and areas lacking clarity.  Additionally, I rescinded the guidance to just remove Turbolinks. My main concern about it was remediated—probably a long time ago—so this part is updated to reflect a different approach. <a class=\"link underline blue b\" href=\"https://sowl.co/boqdo7\">Buy now</a> at the low beta price!"
     },
     {
       "date": "2020-05-04",

@@ -14,6 +14,12 @@
   },
   "updates": [
     {
+      "date": "2020-05-17",
+      "iconName": "teacher",
+      "icon": "👩‍🏫",
+      "content": "New chapter with an end-to-end example. This shows the process of building a UI, writing a system test, and managing business logic. It brings together everything in the book up to this point.  <a class=\"link underline blue b\" href=\"https://sowl.co/boqdo7\">Buy now</a> at the low beta price!"
+    },
+    {
       "date": "2020-05-11",
       "iconName": "nails",
       "icon": "💅",
