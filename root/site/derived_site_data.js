@@ -34,6 +34,12 @@ export default {
   },
   "updates": [
     {
+      "date": "2020-05-25",
+      "iconName": "controls",
+      "icon": "🎛",
+      "content": "New chapter on controllers, plus some revisions on the end-to-end example, namely showing the full TDD/implementation cycle of the entire feature. <a class=\"link underline blue b\" href=\"https://sowl.co/boqdo7\">Buy now</a> at the low beta price!"
+    },
+    {
       "date": "2020-05-17",
       "iconName": "teacher",
       "icon": "👩‍🏫",

@@ -6,7 +6,8 @@ export default class TOC extends React.Component {
       <React.Fragment>
         <ol className="mh2 lh-copy measure">
           <li className="f5 fw5">
-            <a href="chapter1.html">Why This Book Exists (read full chapter)</a>
+            Why This Book Exists <div className="db f6 i"><a href="chapter1.html">[read full chapter online]</a>{ " " }
+            <a href="/assets/sustainable-rails-sample.pdf">[as PDF]</a></div>
             <ol>
               <li className="f6 normal">What is Sustainability?</li>
               <li className="f6 normal">Why Care About Sustainability?</li>
@@ -47,7 +48,7 @@ export default class TOC extends React.Component {
             </ol>
           </li>
           <li className="f5 fw5">
-            Business Logic (Does Not Go in Active Records)
+            Business Logic (Does Not Go in Active Records) <div className="db f6 i"><a href="/assets/sustainable-rails-sample.pdf">[read full chapter as PDF]</a></div>
             <ol>
               <li className="f6 normal">Business Logic is What Makes Your App Special…and Complex</li>
               <li className="f6 normal">Bugs in Commonly-Used Classes Have Wide Effects</li>
@@ -165,7 +166,17 @@ export default class TOC extends React.Component {
               <li className="f6 normal">Writing a System Test</li>
               <li className="f6 normal">Sketch Business Logic and Define the Seam</li>
               <li className="f6 normal">Fully Implement and Test Business Logic</li>
+              <li className="f6 normal">Finished Implementation</li>
               <li className="f6 normal">Reflecting on What We’ve Built</li>
+            </ol>
+          </li>
+          <li className="f5 fw5">
+            Controllers
+            <ol>
+              <li className="f6 normal">Controller Code Should be Thought of as Configuration</li>
+              <li className="f6 normal">Don’t Over-use Callbacks</li>
+              <li className="f6 normal">Controllers Often Convert Parameters to Richer Types</li>
+              <li className="f6 normal">Don’t Over Test</li>
             </ol>
           </li>
         </ol>
@@ -174,16 +185,7 @@ export default class TOC extends React.Component {
             Beta Currently Stops Here{ " "}
             <span role="img" aria-label="construction-barrier">🚧</span>{ " "}
           </div>
-        <ol className="mh2 lh-copy measure" start="19">
-          <li className="f5 fw5">
-            Controllers
-            <ol>
-              <li className="f6 normal">Controllers are where HTTP Terminates</li>
-              <li className="f6 normal">Controllers are an Antifragile Layer</li>
-              <li className="f6 normal">Beware Before Actions and Global Variables</li>
-              <li className="f6 normal">Don’t Over Test</li>
-            </ol>
-          </li>
+        <ol className="mh2 lh-copy measure" start="20">
           <li className="f5 fw5">
             Authentication and Authorization
             <ol>

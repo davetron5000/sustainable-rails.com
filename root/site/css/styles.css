@@ -1,6 +1,32 @@
 html {
-  font-family: "Avenir Next", avenir, sans-serif;
+  font-family: "Baskerville", georgia, serif;
   font-size: 22px;
-  color: #111;
+  color: #333;
 }
 
+h1, h2, h3, h4, h5, .futura {
+  font-family: "Futura", avenir, sans-serif;
+}
+
+.book-blue-gradient {
+  background: linear-gradient(188deg, hsl(189.89999999999998, 83.1%, 62.9%) 79%, hsl(188.60000000000002, 73.3%, 79.4%) 89%);
+}
+
+.book-gray-gradient {
+  background: linear-gradient(215deg, hsl(0, 0%, 20%) 0%, hsl(0, 0%, 40.4%) 90%);
+}
+
+.book-gray { color: #333333; }
+.bg-book-gray { background-color: #333333; }
+.b--book-gray { border-color: #333333; }
+.b--book-blue { border-color: #52D5EF; }
+.book-blue { color: #52D5EF !important; }
+.bg-book-blue { background-color: #52D5EF; }
+.blue { color: #095060; }
+a:visited {
+  color: #095060;
+}
+
+li.fw5 {
+  font-weight: bold;
+}

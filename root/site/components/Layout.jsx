@@ -18,22 +18,34 @@ export default class Layout extends React.Component {
 
 
     let byline = (
-      <h4 className="mt3 ttu fw4 f4">A Book by <a className="dib f4 link underline blue" href="https://naildrivin5.com">David Bryant Copeland</a></h4>
+      <h4 className="mt3 ttu fw4 f5">A Book by <a className="dib f5 link underline blue" href="https://naildrivin5.com">David Bryant Copeland</a></h4>
     )
     let status = (
       <React.Fragment>
-        <h5 className="mt0 lh-title">Current Status as of { formattedDate } - { " " }
-          <span className="normal mb3 db">
+        <div className="mt0">
+        <h5 className="lh-title mb0">Current Status as of { formattedDate }: { " " }</h5>
+          <span className="lh-title f6 mt0 normal mb3 db">
             <div dangerouslySetInnerHTML={ { __html: latestUpdate.content } } />
           </span>
-        </h5>
-        <h6 className="f5 ma0 normal i">What's inside?</h6>
-        <ul className="list mt0">
-          <li>
-            <a className="link underline blue f6 db mt2 normal" href="#outline">View the Table of Contents…</a>
+        </div>
+        <h6 className="f5 ma0 normal">What's inside?</h6>
+        <ul className="list mt0 mb0-ns pl0 pl3-ns">
+          <li className="mt3">
+            <a className="link underline blue f6 db mt2 normal" href="#outline">
+            <span role="img" aria-label="open-book">📖</span>{ " " }
+            View the Table of Contents…
+            </a>
           </li>
-          <li>
-            <a className="link underline blue f6 db mt2 normal" href="chapter1.html">Read all of Chapter 1: "Why this book exists"</a>
+          <li className="mt3">
+            <a className="link underline blue f6 db mt2 normal" href="chapter1.html">
+            <span role="img" aria-label="globe">🌏</span>{ " " }
+              Read Chapter 1 Online—<span className=" underline blue dib">“Why this book exists”.</span></a>
+          </li>
+          <li className="mt3 mb4 mb0-ns">
+            <a className="link underline blue f6 db mt2 normal" href="/assets/sustainable-rails-sample.pdf">
+            <span role="img" aria-label="document">📄</span>{ " " }
+            Download a sample PDF.</a>
+            <p className="f7 normal i">This sample contains all of Chapter 1: “Why This Book Exists” and Chapter 5: “Business Logic (Does not Go in Active Records)”. This will give you a sense of how the book is laid out and what the code listings look like.</p>
           </li>
         </ul>
       </React.Fragment>
@@ -70,8 +82,10 @@ export default class Layout extends React.Component {
     <header className="cf mt3 ph3 tc tl-ns">
       { image }
       <h1 className="mt3 mb0 f3 f2-ns">
-        <a href="/" className="link black f3 f2-ns">
+        <a href="/" className="link book-gray f3 f2-ns">
+          <span className="book-gray">
           Sustainable Web Development
+          </span>
         </a>
       </h1>
       <h2 className="mt0 mb0 f3 f2-ns">with Ruby on Rails</h2>
@@ -83,7 +97,7 @@ export default class Layout extends React.Component {
     <main>
       { this.props.children }
     </main>
-    <footer className="tc bg-black pb4 pa2">
+    <footer className="tc bg-book-gray pb4 pa2">
       <a name="about"></a>
       <p className="lh-copy white">
         Copyright &copy; { copyright.string } by { author }, All Rights Reserved.

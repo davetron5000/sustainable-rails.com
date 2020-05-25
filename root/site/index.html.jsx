@@ -18,7 +18,7 @@ export default function(props) {
   return(
     <Layout>
     <div className="pa3-ns pa0 tc tl-ns ma3-ns ma0 mb3">
-      <a href={ SiteData.buy_now_link } className="link f4-ns f5 nowrap fw7 br3 mt2 ph4 pv2 w-25-ns grow bg-dark-green near-white pointer di">
+      <a href={ SiteData.buy_now_link } className="futura link f4-ns f5 nowrap fw7 br3 mt2 ph4 pv2 w-25-ns grow book-gray-gradient bg-book-blue book-blue pointer di">
         { "Buy Beta Now "  + SiteData.beta_price }
       </a>
     </div>
@@ -33,9 +33,9 @@ export default function(props) {
         {updates}
       </ol>
     </section>
-    <section className="outline">
-      <a name="outline">&nbsp;</a>
-      <h1 className="f3 pv3 tc tl-ns w-100 bg-near-black near-white ph2-ns">Table of Contents</h1>
+    <section>
+      <h1 className="f3 pv3 tc tl-ns mv0 w-100 bg-book-gray near-white ph3-ns">Table of Contents</h1>
+      <a className="ma0 pa0" name="outline">&nbsp;</a>
       <section>
         <h2 className="f5 mt0 ph3 tc tl-ns dib">Got feedback?</h2>
         <ul className="ma0 pa0 dib">
