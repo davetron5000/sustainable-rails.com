@@ -41,7 +41,7 @@ export default {
       "date": "2020-05-25",
       "iconName": "fist",
       "icon": "✊🏿",
-      "content": "50% of all profits to be donated to support #BlackLivesMatter and the ongoing protests against police brutality in the United States"
+      "content": "50% of all profits to be donated to support #BlackLivesMatter and the ongoing protests against police brutality in the United States."
     },
     {
       "date": "2020-05-25",
