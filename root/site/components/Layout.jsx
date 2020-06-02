@@ -59,6 +59,26 @@ export default class Layout extends React.Component {
       status = null
       image  = null
     }
+    let header = (
+      <header className="cf mt3 ph3 tc tl-ns">
+        { image }
+        <h1 className="mt3 mb0 f3 f2-ns">
+          <a href="/" className="link book-gray f3 f2-ns">
+            <span className="book-gray">
+              Sustainable Web Development
+            </span>
+          </a>
+        </h1>
+        <h2 className="mt0 mb0 f3 f2-ns">with Ruby on Rails</h2>
+        <h3 className="mt2 mb0 fw4 f4 fw3-ns f3-ns">Practical Tips for Building Web Applications that Last</h3>
+        { byline }
+        { status }
+      </header>
+    )
+
+    if (this.props.suppressHeader) {
+      header = null
+    }
 
     return(
 <html lang="en">
@@ -79,21 +99,18 @@ export default class Layout extends React.Component {
     <SiteIcons />
   </head>
   <body className="ma0 pa0">
-    <header className="cf mt3 ph3 tc tl-ns">
-      { image }
-      <h1 className="mt3 mb0 f3 f2-ns">
-        <a href="/" className="link book-gray f3 f2-ns">
-          <span className="book-gray">
-          Sustainable Web Development
-          </span>
-        </a>
-      </h1>
-      <h2 className="mt0 mb0 f3 f2-ns">with Ruby on Rails</h2>
-      <h3 className="mt2 mb0 fw4 f4 fw3-ns f3-ns">Practical Tips for Building Web Applications that Last</h3>
-      { byline }
-      { status }
-    </header>
-
+    <aside className="bg-black white tc f4 pa3">
+      <p className="pa0 ma0 mb1">
+      #BlackLivesMatter
+      </p>
+      <p className="pa0 ma0 mb1 f5">
+      50% of all profits until end of 2020 go to <a className="link underline white" href={ SiteData.donations.link }><span className="light-gray">{ SiteData.donations.name }</span></a>.
+      </p>
+      <p className="pa0 ma0 f6">
+        <a href="https://naildrivin5.com/blm.html" className="i underline link white"><span class="white">Read More</span></a>
+      </p>
+    </aside>
+    { header }
     <main>
       { this.props.children }
     </main>
