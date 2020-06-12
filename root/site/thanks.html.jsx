@@ -54,7 +54,7 @@ export default function(props) {
             </div>
           </div>
           <span className="i dark-gray">
-          Note that you to get both discounts you have to buy both books separately.
+            Note that you in order to get both discounts you have to buy both books separately. Sorry :(
         </span>
         </p>
       </header>
