@@ -18,6 +18,12 @@
   },
   "updates": [
     {
+      "date": "2020-06-12",
+      "iconName": "padlock",
+      "icon": "🔐",
+      "content": "Two new chapters! One on authentication/authorization and another on background jobs.  <a class=\"link underline blue b\" href=\"https://sowl.co/boqdo7\">Buy now</a> at the low beta price!"
+    },
+    {
       "date": "2020-06-02",
       "iconName": "fist",
       "icon": "✊🏿",

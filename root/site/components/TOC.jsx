@@ -179,29 +179,32 @@ export default class TOC extends React.Component {
               <li className="f6 normal">Don’t Over Test</li>
             </ol>
           </li>
+          <li className="f5 fw5">
+            Authentication and Authorization
+            <ol>
+              <li className="f6 normal">When in Doubt Use Devise or OmniAuth</li>
+              <li className="f6 normal">Authorization and Role-based Access Controls</li>
+              <li className="f6 normal">Test Access Controls In System Tests</li>
+            </ol>
+          </li>
+          <li className="f5 fw5">
+            Jobs
+            <ol>
+              <li className="f6 normal">Use Jobs To Defer Execution or Increase Fault-Tolerance</li>
+              <li className="f6 normal">Understand How Your Job Backend Works</li>
+              <li className="f6 normal">Sidekiq is The Best Job Backend for Most Teams</li>
+              <li className="f6 normal">Queue Jobs Directly, and Have Them Defer to Your Business Logic Code</li>
+              <li className="f6 normal">Job Testing Strategies</li>
+              <li className="f6 normal">Jobs Will Get Retried and Must Be Idempotent</li>
+            </ol>
+          </li>
         </ol>
           <div className="bb ma0 ph3 tc tl-ns w-100 w-50-ns fw5 f5 dark-red nowrap">
             <span role="img" aria-label="construction-barrier">🚧</span>{ " "}
             Beta Currently Stops Here{ " "}
             <span role="img" aria-label="construction-barrier">🚧</span>{ " "}
           </div>
-        <ol className="mh2 lh-copy measure" start="20">
-          <li className="f5 fw5">
-            Authentication and Authorization
-            <ol>
-              <li className="f6 normal">When in Doubt, Use Devise</li>
-              <li className="f6 normal">Authorization and Role-based Access Controls</li>
-              <li className="f6 normal">System Test Access Controls</li>
-            </ol>
-          </li>
-          <li className="f5 fw5">
-            Jobs
-            <ol>
-              <li className="f6 normal">Jobs Must Be Idempotent</li>
-              <li className="f6 normal">Understand How Your Job System Works</li>
-              <li className="f6 normal">Safely Modify Job APIs</li>
-            </ol>
-          </li>
+        <ol className="mh2 lh-copy measure" start="22">
           <li className="f5 fw5">
             Other Boundary Classes
             <ol>

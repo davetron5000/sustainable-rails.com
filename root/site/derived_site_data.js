@@ -38,7 +38,13 @@ export default {
   },
   "updates": [
     {
-      "date": "2020-05-25",
+      "date": "2020-06-12",
+      "iconName": "padlock",
+      "icon": "🔐",
+      "content": "Two new chapters! One on authentication/authorization and another on background jobs.  <a class=\"link underline blue b\" href=\"https://sowl.co/boqdo7\">Buy now</a> at the low beta price!"
+    },
+    {
+      "date": "2020-06-02",
       "iconName": "fist",
       "icon": "✊🏿",
       "content": "50% of all profits to be donated to support #BlackLivesMatter and the ongoing protests against police brutality in the United States."
