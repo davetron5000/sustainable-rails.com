@@ -198,33 +198,30 @@ export default class TOC extends React.Component {
               <li className="f6 normal">Jobs Will Get Retried and Must Be Idempotent</li>
             </ol>
           </li>
+          <li className="f5 fw5">
+            Other Boundary Classes
+            <ol>
+              <li className="f6 normal">Mailers</li>
+              <li className="f6 normal">Rake Tasks</li>
+              <li className="f6 normal">Mailboxes, Cables, and Active Storage</li>
+            </ol>
+          </li>
+          <li className="f5 fw5">
+            Sustainable Process and Workflows
+            <ol>
+              <li className="f6 normal">Use Continuous Integration To Deploy</li>
+              <li className="f6 normal">Frequent Dependency Updates</li>
+              <li className="f6 normal">Leverage Generators and Templates over Documentation</li>
+              <li className="f6 normal">RubyGems and Railties Can Distribute Shared Configuration</li>
+            </ol>
+          </li>
         </ol>
           <div className="bb ma0 ph3 tc tl-ns w-100 w-50-ns fw5 f5 dark-red nowrap">
             <span role="img" aria-label="construction-barrier">🚧</span>{ " "}
             Beta Currently Stops Here{ " "}
             <span role="img" aria-label="construction-barrier">🚧</span>{ " "}
           </div>
-        <ol className="mh2 lh-copy measure" start="22">
-          <li className="f5 fw5">
-            Other Boundary Classes
-            <ol>
-              <li className="f6 normal">Mailers</li>
-              <li className="f6 normal">Mailboxes</li>
-              <li className="f6 normal">Rake Tasks</li>
-            </ol>
-          </li>
-          <li className="f5 fw5">
-            Production-Safe Database Changes
-          </li>
-          <li className="f5 fw5">
-            Sustainable Process and Workflows
-            <ol>
-              <li className="f6 normal">Continuous Integration</li>
-              <li className="f6 normal">Leverage Generators and Templates over Documentation</li>
-              <li className="f6 normal">Frequent Dependency Updates</li>
-              <li className="f6 normal">Railties Can Distribute Shared Configuration</li>
-            </ol>
-          </li>
+        <ol className="mh2 lh-copy measure" start="24">
           <li className="f5 fw5">
             Operations
             <ol>
@@ -235,6 +232,9 @@ export default class TOC extends React.Component {
               <li className="f6 normal">Measure Performance</li>
               <li className="f6 normal">Managing Secrets, Keys, and Passwords</li>
             </ol>
+          </li>
+          <li className="f5 fw5">
+            Production-Safe Database Changes
           </li>
           <li className="f5 fw5">
             API Endpoints

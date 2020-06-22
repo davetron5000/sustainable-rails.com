@@ -38,6 +38,12 @@ export default {
   },
   "updates": [
     {
+      "date": "2020-06-22",
+      "iconName": "envelope",
+      "icon": "📧",
+      "content": "Two MORE new chapters! One on other boundary classes (mailers, rake tasks) and one on sustainable workflows and processes.  <a class=\"link underline blue b\" href=\"https://sowl.co/boqdo7\">Buy now</a> at the low beta price!"
+    },
+    {
       "date": "2020-06-12",
       "iconName": "padlock",
       "icon": "🔐",
