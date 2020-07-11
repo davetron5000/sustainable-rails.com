@@ -215,27 +215,24 @@ export default class TOC extends React.Component {
               <li className="f6 normal">RubyGems and Railties Can Distribute Shared Configuration</li>
             </ol>
           </li>
+          <li className="f5 fw5">
+            Operations
+            <ol>
+              <li className="f6 normal">Why Observability Matters</li>
+              <li className="f6 normal">Monitor Business Outcomes</li>
+              <li className="f6 normal">Logging is Powerful</li>
+              <li className="f6 normal">Manage Unhandled Exceptions</li>
+              <li className="f6 normal">Measure Performance</li>
+              <li className="f6 normal">Managing Secrets, Keys, and Passwords</li>
+            </ol>
+          </li>
         </ol>
           <div className="bb ma0 ph3 tc tl-ns w-100 w-50-ns fw5 f5 dark-red nowrap">
             <span role="img" aria-label="construction-barrier">🚧</span>{ " "}
             Beta Currently Stops Here{ " "}
             <span role="img" aria-label="construction-barrier">🚧</span>{ " "}
           </div>
-        <ol className="mh2 lh-copy measure" start="24">
-          <li className="f5 fw5">
-            Operations
-            <ol>
-              <li className="f6 normal">Why Observability Matters</li>
-              <li className="f6 normal">Logging is Powerful</li>
-              <li className="f6 normal">Monitor Things You Want To Know About</li>
-              <li className="f6 normal">Managing Unhandled Exceptions</li>
-              <li className="f6 normal">Measure Performance</li>
-              <li className="f6 normal">Managing Secrets, Keys, and Passwords</li>
-            </ol>
-          </li>
-          <li className="f5 fw5">
-            Production-Safe Database Changes
-          </li>
+        <ol className="mh2 lh-copy measure" start="25">
           <li className="f5 fw5">
             API Endpoints
             <ol>
@@ -247,6 +244,7 @@ export default class TOC extends React.Component {
           <li className="f5 fw5">
             Scalability Patterns
             <ol>
+              <li className="f6 normal">Production-Safe Database Changes</li>
               <li className="f6 normal">Database Transactions</li>
               <li className="f6 normal">Asynchronous Transaction</li>
               <li className="f6 normal">Sagas / Step Functions</li>

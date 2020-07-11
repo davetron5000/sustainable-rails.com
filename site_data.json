@@ -18,6 +18,12 @@
   },
   "updates": [
     {
+      "date": "2020-07-11",
+      "iconName": "muscle",
+      "icon": "💪",
+      "content": "New chapter on operations and concerns around observability with your Rails app. <a class=\"link underline blue b\" href=\"https://sowl.co/boqdo7\">Buy now</a> at the low beta price! Note that…I'm almost done!!"
+    },
+    {
       "date": "2020-06-22",
       "iconName": "envelope",
       "icon": "📧",
