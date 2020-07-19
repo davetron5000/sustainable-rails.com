@@ -18,6 +18,12 @@
   },
   "updates": [
     {
+      "date": "2020-07-19",
+      "iconName": "web",
+      "icon": "🕸",
+      "content": "New chapter on JSON APIs in your Rails app. <a class=\"link underline blue b\" href=\"https://sowl.co/boqdo7\">Buy now</a> at the low beta price! Note that…I'm almost done!!"
+    },
+    {
       "date": "2020-07-11",
       "iconName": "muscle",
       "icon": "💪",

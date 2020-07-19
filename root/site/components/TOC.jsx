@@ -226,21 +226,25 @@ export default class TOC extends React.Component {
               <li className="f6 normal">Managing Secrets, Keys, and Passwords</li>
             </ol>
           </li>
+          <li className="f5 fw5">
+            API Endpoints
+            <ol>
+              <li className="f6 normal">Be Clear About What your API is For and Who Will Consume It</li>
+              <li className="f6 normal">Write APIs the Same Way You Write Other Code</li>
+              <li className="f6 normal">Use the Simplest Authentication System You Can</li>
+              <li className="f6 normal">Use the Simplest Content Type You Can</li>
+              <li className="f6 normal">Just Put The Version in the URL</li>
+              <li className="f6 normal">Use .to_json to Create JSON</li>
+              <li className="f6 normal">Test API Endpoints</li>
+            </ol>
+          </li>
         </ol>
           <div className="bb ma0 ph3 tc tl-ns w-100 w-50-ns fw5 f5 dark-red nowrap">
             <span role="img" aria-label="construction-barrier">🚧</span>{ " "}
             Beta Currently Stops Here{ " "}
             <span role="img" aria-label="construction-barrier">🚧</span>{ " "}
           </div>
-        <ol className="mh2 lh-copy measure" start="25">
-          <li className="f5 fw5">
-            API Endpoints
-            <ol>
-              <li className="f6 normal">A JSON Strategy</li>
-              <li className="f6 normal">Understand How to_json Works</li>
-              <li className="f6 normal">Middleware vs. Before Actions</li>
-            </ol>
-          </li>
+        <ol className="mh2 lh-copy measure" start="26">
           <li className="f5 fw5">
             Scalability Patterns
             <ol>
