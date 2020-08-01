@@ -238,23 +238,24 @@ export default class TOC extends React.Component {
               <li className="f6 normal">Test API Endpoints</li>
             </ol>
           </li>
+          <li className="f5 fw5">
+            Sustainability As You Grow
+            <ol>
+              <li className="f6 normal">Database Transactions</li>
+              <li className="f6 normal">Sequenced Background Jobs, AKA Sagas</li>
+              <li className="f6 normal">Asynchronous Transaction</li>
+              <li className="f6 normal">Monoliths, Microservices, and Shared Databases</li>
+              <li className="f6 normal">Technical Leadership is Critical</li>
+              <li className="f6 normal">The End!</li>
+            </ol>
+          </li>
         </ol>
           <div className="bb ma0 ph3 tc tl-ns w-100 w-50-ns fw5 f5 dark-red nowrap">
             <span role="img" aria-label="construction-barrier">🚧</span>{ " "}
             Beta Currently Stops Here{ " "}
             <span role="img" aria-label="construction-barrier">🚧</span>{ " "}
           </div>
-        <ol className="mh2 lh-copy measure" start="26">
-          <li className="f5 fw5">
-            Scalability Patterns
-            <ol>
-              <li className="f6 normal">Production-Safe Database Changes</li>
-              <li className="f6 normal">Database Transactions</li>
-              <li className="f6 normal">Asynchronous Transaction</li>
-              <li className="f6 normal">Sagas / Step Functions</li>
-              <li className="f6 normal">Monoliths, Microservices, and Shared Databases</li>
-            </ol>
-          </li>
+        <ol className="mh2 lh-copy measure" start="27">
         </ol>
       </React.Fragment>
     )

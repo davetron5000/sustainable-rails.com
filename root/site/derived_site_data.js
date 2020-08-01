@@ -38,6 +38,12 @@ export default {
   },
   "updates": [
     {
+      "date": "2020-08-02",
+      "iconName": "trophy",
+      "icon": "🏆",
+      "content": "Pretty much done!!! Last chapter is on more advanced sustainability patterns.  <a class=\"link underline blue b\" href=\"https://sowl.co/boqdo7\">Buy now</a> at the low beta price! The published price will go up!"
+    },
+    {
       "date": "2020-07-19",
       "iconName": "web",
       "icon": "🕸",
