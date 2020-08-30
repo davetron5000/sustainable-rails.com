@@ -21,6 +21,8 @@ h1, h2, h3, h4, h5, .futura {
 .b--book-gray { border-color: #333333; }
 .b--book-blue { border-color: #52D5EF; }
 .book-blue { color: #52D5EF !important; }
+.bright-blue { color: #74F7FF !important; }
+.bg-bright-blue { background-color: #74F7FF !important; }
 .bg-book-blue { background-color: #52D5EF; }
 .blue { color: #095060; }
 a:visited {
