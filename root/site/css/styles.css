@@ -28,6 +28,9 @@ h1, h2, h3, h4, h5, .futura {
 a:visited {
   color: #095060;
 }
+a:visited.light-blue {
+  color: #74F7FF;
+}
 
 li.fw5 {
   font-weight: bold;

@@ -21,7 +21,14 @@ export default class Layout extends React.Component {
       <h4 className="mt3 ttu fw4 f5">A Book by <a className="dib f5 link underline blue" href="https://naildrivin5.com">David Bryant Copeland</a></h4>
     )
     let image = (
-      <img src="/images/cover.png" className="fl pr2 dn di-ns" width="287" />
+      <div>
+        <div class="db dn-ns w5 center">
+          <img src="/images/book-with-tablet-mobile.png" />
+        </div>
+        <div class="db-ns dn w5">
+          <img src="/images/book-with-tablet-mobile.png" className="db fl" />
+        </div>
+      </div>
     )
 
     if (this.props.compact) {
