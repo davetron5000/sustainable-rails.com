@@ -14,7 +14,7 @@ export default class TOC extends React.Component {
             <ol>
               <li className="f6 normal">What is Sustainability?</li>
               <li className="f6 normal">Why Care About Sustainability?</li>
-              <li className="f6 normal">How to Value Sustainability?</li>
+              <li className="f6 normal">How to Value Sustainability</li>
               <li className="f6 normal">Assumptions</li>
               <li className="f6 normal">Opportunity and Carrying Costs</li>
               <li className="f6 normal">Why should you trust me?</li>
@@ -54,7 +54,7 @@ export default class TOC extends React.Component {
             <li className="f5 fw5">
             Business Logic (Does Not Go in Active Records) <div className="db f6 i"><a href="/assets/sustainable-rails-sample.pdf">[read full chapter as PDF]</a></div>
             <ol>
-              <li className="f6 normal">Business Logic is What Makes Your App Special…and Complex</li>
+              <li className="f6 normal">Business Logic Makes Your App Special…and Complex</li>
               <li className="f6 normal">Bugs in Commonly-Used Classes Have Wide Effects</li>
               <li className="f6 normal">Business Logic in Active Records Puts Churn and Complexity in Critical Classes</li>
               <li className="f6 normal">Example Design of a Feature</li>
@@ -79,7 +79,7 @@ export default class TOC extends React.Component {
             HTML Templates
             <ol>
               <li className="f6 normal">Use Semantic HTML</li>
-              <li className="f6 normal">Build Templates Around Their Controller’s Resource as a Single Instance Variable</li>
+              <li className="f6 normal">Ideally, Expose One Instance Variable Per Action</li>
               <li className="f6 normal">Think of Partials as Re-usable Components</li>
               <li className="f6 normal">Just Use ERB</li>
             </ol>
@@ -147,11 +147,11 @@ export default class TOC extends React.Component {
             </ol>
             </li>
             <li className="f5 fw5">
-            Business Logic Code Should Be Thought of as a Seam
+            Business Logic Code is a Seam
             <ol>
               <li className="f6 normal">Business Logic Code Must Reveal Behavior</li>
               <li className="f6 normal">Services are Stateless, Explicitly-Named Classes with Explicitly-Named Methods</li>
-              <li className="f6 normal">Alternate Implementation Patterns You Might Want to Avoid</li>
+              <li className="f6 normal">Implementation Patterns You Might Want to Avoid</li>
             </ol>
             </li>
             <li className="f5 fw5">
@@ -179,22 +179,14 @@ export default class TOC extends React.Component {
             <li className="f5 fw5">
             Controllers
             <ol>
-              <li className="f6 normal">Controller Code Should be Thought of as Configuration</li>
+              <li className="f6 normal">Controller Code is Configuration</li>
               <li className="f6 normal">Don’t Over-use Callbacks</li>
-              <li className="f6 normal">Controllers Often Convert Parameters to Richer Types</li>
+              <li className="f6 normal">Controllers Should Convert Parameters to Richer Types</li>
               <li className="f6 normal">Don’t Over Test</li>
             </ol>
             </li>
             <li className="f5 fw5">
-            Authentication and Authorization
-            <ol>
-              <li className="f6 normal">When in Doubt Use Devise or OmniAuth</li>
-              <li className="f6 normal">Authorization and Role-based Access Controls</li>
-              <li className="f6 normal">Test Access Controls In System Tests</li>
-            </ol>
-            </li>
-            <li className="f5 fw5">
-            Jobs <div className="db f6 i"><a href="/assets/sustainable-rails-sample.pdf">[read full chapter as PDF]</a></div>
+            Jobs
             <ol>
               <li className="f6 normal">Use Jobs To Defer Execution or Increase Fault-Tolerance</li>
               <li className="f6 normal">Understand How Your Job Backend Works</li>
@@ -205,7 +197,7 @@ export default class TOC extends React.Component {
             </ol>
             </li>
             <li className="f5 fw5">
-            Other Boundary Classes
+            Other Boundary Classes <div className="db f6 i"><a href="/assets/sustainable-rails-sample.pdf">[read full chapter as PDF]</a></div>
             <ol>
               <li className="f6 normal">Mailers</li>
               <li className="f6 normal">Rake Tasks</li>
@@ -216,14 +208,34 @@ export default class TOC extends React.Component {
           </li>
           <li className="f4 fw5">
             Beyond Rails
-            <ol start="22">
+            <ol start="21">
+            <li className="f5 fw5">
+            Authentication and Authorization
+            <ol>
+              <li className="f6 normal">When in Doubt Use Devise or OmniAuth</li>
+              <li className="f6 normal">Authorization and Role-based Access Controls</li>
+              <li className="f6 normal">Test Access Controls In System Tests</li>
+            </ol>
+            </li>
+            <li className="f5 fw5">
+            API Endpoints
+            <ol>
+              <li className="f6 normal">Be Clear About What—and Who—Your API is For</li>
+              <li className="f6 normal">Write APIs the Same Way You Write Other Code</li>
+              <li className="f6 normal">Use the Simplest Authentication System You Can</li>
+              <li className="f6 normal">Use the Simplest Content Type You Can</li>
+              <li className="f6 normal">Just Put The Version in the URL</li>
+              <li className="f6 normal">Use .to_json to Create JSON</li>
+              <li className="f6 normal">Test API Endpoints</li>
+            </ol>
+            </li>
             <li className="f5 fw5">
             Sustainable Process and Workflows
             <ol>
               <li className="f6 normal">Use Continuous Integration To Deploy</li>
               <li className="f6 normal">Frequent Dependency Updates</li>
               <li className="f6 normal">Leverage Generators and Templates over Documentation</li>
-              <li className="f6 normal">RubyGems and Railties Can Distribute Shared Configuration</li>
+              <li className="f6 normal">RubyGems and Railties Can Distribute Configuration</li>
             </ol>
             </li>
             <li className="f5 fw5">
@@ -235,18 +247,6 @@ export default class TOC extends React.Component {
               <li className="f6 normal">Manage Unhandled Exceptions</li>
               <li className="f6 normal">Measure Performance</li>
               <li className="f6 normal">Managing Secrets, Keys, and Passwords</li>
-            </ol>
-            </li>
-            <li className="f5 fw5">
-            API Endpoints
-            <ol>
-              <li className="f6 normal">Be Clear About What Your API is For and Who Will Consume It</li>
-              <li className="f6 normal">Write APIs the Same Way You Write Other Code</li>
-              <li className="f6 normal">Use the Simplest Authentication System You Can</li>
-              <li className="f6 normal">Use the Simplest Content Type You Can</li>
-              <li className="f6 normal">Just Put The Version in the URL</li>
-              <li className="f6 normal">Use .to_json to Create JSON</li>
-              <li className="f6 normal">Test API Endpoints</li>
             </ol>
             </li>
             </ol>
