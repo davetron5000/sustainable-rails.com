@@ -26,7 +26,9 @@ export default {
   "url": "https://sustainable-rails.com",
   "beta_price": "$29.95",
   "price": "$49.95",
+  "print_price": "$49.95",
   "buy_now_link": "https://sowl.co/boqdo7",
+  "buy_print_link": "https://bit.ly/sustainable-rails-print",
   "tss": {
     "link": "http://bit.ly/dcsweng"
   },

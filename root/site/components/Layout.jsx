@@ -22,10 +22,10 @@ export default class Layout extends React.Component {
     )
     let image = (
       <div>
-        <div class="db dn-ns w5 center">
+        <div className="db dn-ns w5 center">
           <img src="/images/book-with-tablet-mobile.png" />
         </div>
-        <div class="db-ns dn w5">
+        <div className="db-ns dn w5">
           <img src="/images/book-with-tablet-mobile.png" className="db fl" />
         </div>
       </div>
@@ -82,7 +82,7 @@ export default class Layout extends React.Component {
       50% of all profits until end of 2020 go to <a className="link underline white" href={ SiteData.donations.link }><span className="light-gray">{ SiteData.donations.name }</span></a>.
       </p>
       <p className="pa0 ma0 f6">
-        <a href="https://naildrivin5.com/blm.html" className="i underline link white"><span class="white">Read More</span></a>
+        <a href="https://naildrivin5.com/blm.html" className="i underline link white"><span className="white">Read More</span></a>
       </p>
     </aside>
     { header }

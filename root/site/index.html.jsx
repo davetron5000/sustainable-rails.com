@@ -17,10 +17,18 @@ export default function(props) {
   })
   return(
     <Layout>
-      <div className="pa3-ns pa0 tc ma3-ns ma0 mt2 mb4">
-        <a href={ SiteData.buy_now_link } className="futura link f4-ns f5 nowrap fw7 br3 mt2 ph4 pv2 w-25-ns grow book-gray-gradient bg-book-blue book-blue pointer di">
-          { "Buy Now "  + SiteData.price }
+      <div className="pa2-ns pa0 tc ma1-ns ma0 mt2 mb2">
+        <a href={ SiteData.buy_now_link } className="futura link f4-ns f5 nowrap fw7 br3 mt2 ph4 pv2 book-gray-gradient bg-book-blue book-blue pointer dib">
+          { "Buy e-Book "  + SiteData.price }
         </a>
+        <div className="pa0 tc ma3-ns mt4 mt3-ns mb4">
+          <a href={ SiteData.buy_print_link } className="link underline book-gray">
+            { "or Buy in Print for "  + SiteData.print_price }
+          </a>
+          <sup>
+            <a href="#both" className="link book-gray b">&dagger;</a>
+          </sup>
+        </div>
       </div>
       <section className="pa3 ma0 bt mw6-ns center-ns">
         <ul>
@@ -91,7 +99,7 @@ export default function(props) {
             <img src="/images/tablet.png" />
           </div>
           <div className="w4 fr dn db-ns ml4">
-            <img src="/images/tablet.png" class="db"/>
+            <img src="/images/tablet.png" className="db"/>
           </div>
           <ul>
             <li className="lh-copy measure">Over 450 Pages of practical tips on building Rails apps</li>
@@ -110,10 +118,12 @@ export default function(props) {
             <img src="/images/book.png" />
           </div>
           <div className="mt5-ns">
-            <a className="db tc link underline dark-blue tl-ns" href="#">$49.95 from Amazon</a>
+            <a className="db tc link underline book-gray tl-ns" href={ SiteData.buy_print_link }>{ SiteData.print_price } from Amazon</a>
+            <a name="both">
             <p className="lh-copy f7 i pl5 tr tl-ns mt3">
               <sup>*</sup>Due to the realities of self-publishing, I can't offer you a package deal on both the ebook and the print version.  My recommendation is to buy the version that you find most comfortable for reading.
             </p>
+            </a>
           </div>
         </div>
       </section>
@@ -134,18 +144,19 @@ export default function(props) {
           </p>
         </div>
       </section>
-      <section>
-        <h1 className="f3 pv3 tc tl-ns mv0 w-100 bg-book-gray near-white ph3-ns">
+      <section className="mt5">
+        <h1 className="f3 pv1 tc tl-ns mv0 w-100 ph3-ns">
           <div className="mw7-ns center-ns">
             Table of Contents
           </div>
         </h1>
-        <a className="ma0 pa0" name="outline">&nbsp;</a>
-        <section className="ph4-ns pl2 mw7-ns center-ns">
-          <TOC />
-        </section>
+        <a className="ma0 pa0" name="outline">
+          <section className="ph4-ns pl2 mw7-ns center-ns">
+            <TOC />
+          </section>
+        </a>
       </section>
-      <section className="bg-book-blue near-black pa3 pt4-ns">
+      <section className="bg-light-gray near-black pa3 pt4-ns">
         <div className="mw6-ns center-ns tc-ns">
         <h2 className="f5 mt0 ph3 tc dib">Got feedback?</h2>
         <ul className="ma0 pa0 dib">
