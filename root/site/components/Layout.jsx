@@ -23,10 +23,10 @@ export default class Layout extends React.Component {
     let image = (
       <div>
         <div className="db dn-ns w5 center">
-          <img src="/images/book-with-tablet-mobile.png" />
+          <img src="/images/book-with-tablet-mobile-1000.jpg" />
         </div>
         <div className="db-ns dn w5">
-          <img src="/images/book-with-tablet-mobile.png" className="db fl" />
+          <img src="/images/book-with-tablet-mobile-1000.jpg" className="db fl" />
         </div>
       </div>
     )
@@ -36,7 +36,7 @@ export default class Layout extends React.Component {
       image  = null
     }
     let header = (
-      <header className="cf mt3 ph3 tc tl-ns">
+      <header className="cf mt3 ph3 tc tl-ns bg-white black">
         { image }
         <h1 className="mt3 mb0 f3 f2-ns">
           <a href="/" className="link book-gray f3 f2-ns">

@@ -49,7 +49,7 @@ export default function(props) {
           This book can help.
         </p>
       </section>
-      <section className="bg-book-gray near-white ma0 pa2">
+      <section className="bg-book-gray book-gray-gradient near-white ma0 pa2 pt4 pt2-ns">
         <div className="center-ns mw6-ns mt3-ns">
         <ul className="list ph3 ma0">
           <li className="tl tc-ns futura lh-title mb3 ph0 mh0">Practical tips for each part of Rails…with examples</li>
@@ -64,7 +64,7 @@ export default function(props) {
         </p>
         </div>
       </section>
-      <section>
+      <section className="ma0 pa0 pv3 bg-light-gray">
         <p className="lh-copy measure measure-narrow-ns f4 ph3 tc center">
           Learn how to manage <strong className="db">carrying costs</strong> in your app by strategically incurring <strong className="db">opportunity costs</strong>
         </p>
@@ -92,14 +92,16 @@ export default function(props) {
           </p>
         </div>
       </section>
-      <section className="pa3 book-gray-gradient near-white ma0">
+      <section className="pa3 pb0 pb3-ns bg-white near-black ma0">
         <div className="center-ns mw6-ns cf">
           <h1 className="f3 tc">What You Get</h1>
           <div className="w4 center tc dn-ns">
-            <img src="/images/tablet.png" />
+            <img src="/images/tablet.jpg" />
           </div>
           <div className="w4 fr dn db-ns ml4">
-            <img src="/images/tablet.png" className="db"/>
+            <figure class="pa2 br3 ma0 bg-white">
+            <img src="/images/tablet.jpg" className="db"/>
+            </figure>
           </div>
           <ul>
             <li className="lh-copy measure">Over 450 Pages of practical tips on building Rails apps</li>
@@ -108,17 +110,17 @@ export default function(props) {
           </ul>
         </div>
       </section>
-      <section className="pa3 bg-near-white near-black ma0">
+      <section className="pa3 pt0 pt3-ns bg-white near-black ma0">
         <div className="center-ns mw6-ns cf">
           <h1 className="f3 tc">Prefer it in print?</h1>
           <div className="w5 center tc dn-ns">
-            <img src="/images/book.png" />
+            <img src="/images/book.jpg" />
           </div>
           <div className="w5 dn db-ns fl">
-            <img src="/images/book.png" />
+            <img src="/images/book.jpg" />
           </div>
           <div className="mt5-ns">
-            <a className="db tc link underline book-gray tl-ns" href={ SiteData.buy_print_link }>{ SiteData.print_price } from Amazon</a>
+            <a className="db tr link underline book-gray tl-ns" href={ SiteData.buy_print_link }>{ SiteData.print_price } from Amazon</a>
             <a name="both">
             <p className="lh-copy f7 i pl5 tr tl-ns mt3">
               <sup>*</sup>Due to the realities of self-publishing, I can't offer you a package deal on both the ebook and the print version.  My recommendation is to buy the version that you find most comfortable for reading.
@@ -129,8 +131,8 @@ export default function(props) {
       </section>
       <section className="pa3 ma0 bg-near-black near-white">
         <div className="center-ns mw6-ns cf">
-          <h1 className="f3">About Me (the Author)</h1>
-          <img src="/images/DavidCopeland.png" className="fl mt2 mr3 mb2 br3 mw-2 w-25" />
+          <h1 className="f3 lh-title">About Me <span class="dib">(the Author)</span></h1>
+          <img src="/images/DavidCopeland.jpg" className="fl mt2 mr3 mb2 br3 mw-2 w-25" />
           <p className="lh-copy measure">
             My name is David Bryant Copeland and I've spent the last eight years working on long-lived Rails apps. I've worked on a huge monolith whose construction was not managed as well as greenfield apps that evolved over many years from monoliths to a microservices architecture.
           </p>
