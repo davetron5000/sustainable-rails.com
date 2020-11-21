@@ -13,7 +13,7 @@ export default function(props) {
           An email is on its way to you right now with a link where you can download the book.  I hope you enjoy it!  I'd love to hear your feedback or thoughts, so please use <a className="link underline blue" href="https://docs.google.com/forms/d/e/1FAIpQLScN1Oze7aw0PtREuph909ZWYy_ZFPCzkLZKJvlY1BodwIuBTQ/viewform?usp=sf_link">this form</a> to send any feedback my way.
         </p>
         <p className="lh-copy measure">
-          <strong>Note:</strong> If you used a credit card or Apple Pay, you will see a charge from "Third Tank, LLC".  That is me.  It's an <a href="https://thirdtank.com">LLC I use</a> to manage money I make from these book, so don't be alarmed!
+          <strong>Note:</strong> If you used a credit card or Apple Pay, you will see a charge from "Third Tank, LLC".  That is me.  It's an <a href="https://thirdtank.com">LLC I use</a> to manage money I make from these books, so don't be alarmed!
         </p>
         <p className="lh-copy measure">
           As a thank-you for supporting my work, here is a code you can use to get a discount on my other works, if you are interested.
