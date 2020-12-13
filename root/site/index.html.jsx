@@ -29,6 +29,11 @@ export default function(props) {
             <a href="#both" className="link book-gray b">&dagger;</a>
           </sup>
         </div>
+        <div className="pa0 tc ma3-ns mt4 mt3-ns mb4">
+          <a href="#versions" className="link underline book-gray f7">
+            works with Rails 6.1
+          </a>
+        </div>
       </div>
       <section className="pa3 ma0 bt mw6-ns center-ns">
         <ul>
@@ -94,7 +99,7 @@ export default function(props) {
       </section>
       <section className="pa3 pb0 pb3-ns bg-white near-black ma0">
         <div className="center-ns mw6-ns cf">
-          <h1 className="f3 tc">What You Get</h1>
+          <h2 className="f3 tc">What You Get</h1>
           <div className="w4 center tc dn-ns">
             <img src="/images/tablet.jpg" />
           </div>
@@ -112,7 +117,7 @@ export default function(props) {
       </section>
       <section className="pa3 pt0 pt3-ns bg-white near-black ma0">
         <div className="center-ns mw6-ns cf">
-          <h1 className="f3 tc">Prefer it in print?</h1>
+          <h2 className="f3 tc">Prefer it in print?</h1>
           <div className="w5 center tc dn-ns">
             <img src="/images/book.jpg" />
           </div>
@@ -128,10 +133,23 @@ export default function(props) {
             </a>
           </div>
         </div>
+        <a name="versions">
+        <div className="tc mt5-ns">
+          <h3>Versions</h3>
+          <ul className="list pa0 ma0">
+            <li className="lh-copy di">Rails 6.1</li>
+            <li ariaRole="non" className="lh-copy di ph3">&middot;</li>
+            <li className="lh-copy di">Ruby 2.7.2</li>
+          </ul>
+          <p className="lh-copy measure center f6">
+            The book's guidance can be applied to <strong>any</strong> version of Rails, but the code samples use the non-deprecated APIs for Rails 6.1
+          </p>
+        </div>
+        </a>
       </section>
       <section className="pa3 ma0 bg-near-black near-white">
         <div className="center-ns mw6-ns cf">
-          <h1 className="f3 lh-title">About Me <span class="dib">(the Author)</span></h1>
+          <h2 className="f3 lh-title">About Me <span class="dib">(the Author)</span></h1>
           <img src="/images/DavidCopeland.jpg" className="fl mt2 mr3 mb2 br3 mw-2 w-25" />
           <p className="lh-copy measure">
             My name is David Bryant Copeland and I've spent the last eight years working on long-lived Rails apps. I've worked on a huge monolith whose construction was not managed as well as greenfield apps that evolved over many years from monoliths to a microservices architecture.
@@ -147,7 +165,7 @@ export default function(props) {
         </div>
       </section>
       <section className="mt5">
-        <h1 className="f3 pv1 tc tl-ns mv0 w-100 ph3-ns">
+        <h2 className="f3 pv1 tc tl-ns mv0 w-100 ph3-ns">
           <div className="mw7-ns center-ns">
             Table of Contents
           </div>
