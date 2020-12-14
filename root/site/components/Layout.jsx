@@ -13,8 +13,6 @@ export default class Layout extends React.Component {
     const description = SiteData.description || "Set the description in site_data.json"
     const twitter     = SiteData.twitter     || "Set your twitter handle in site_data.json"
     const url         = SiteData.url         || "Set the url in site_data.json"
-    const latestUpdate = SiteData.updates[0];
-    const formattedDate = latestUpdate.date
 
 
     let byline = (

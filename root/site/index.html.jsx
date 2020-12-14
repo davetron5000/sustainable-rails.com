@@ -2,19 +2,11 @@ import React from "react";
 
 import Layout from "./components/Layout";
 import EmailForm from "./components/EmailForm";
-import UpdateItem from "./components/UpdateItem";
 import TOC from "./components/TOC";
 
 import SiteData from "./derived_site_data.js"
 
 export default function(props) {
-  const updates = SiteData.updates.map( (update) => {
-    return (
-      <UpdateItem date={ update.date } iconName={update.iconName} icon={update.icon}>
-        <div dangerouslySetInnerHTML={ { __html: update.content } } />
-      </UpdateItem>
-    );
-  })
   return(
     <Layout>
       <div className="pa2-ns pa0 tc ma1-ns ma0 mt2 mb2">
@@ -99,7 +91,7 @@ export default function(props) {
       </section>
       <section className="pa3 pb0 pb3-ns bg-white near-black ma0">
         <div className="center-ns mw6-ns cf">
-          <h2 className="f3 tc">What You Get</h1>
+          <h2 className="f3 tc">What You Get</h2>
           <div className="w4 center tc dn-ns">
             <img src="/images/tablet.jpg" />
           </div>
@@ -110,14 +102,15 @@ export default function(props) {
           </div>
           <ul>
             <li className="lh-copy measure">Over 450 Pages of practical tips on building Rails apps</li>
-            <li className="lh-copy measure">A beautifully typeset PDF for reading on any device, replete with an index for quick reference.</li>
-            <li className="lh-copy measure">EPUB, Kindle, and Markdown versions</li>
+            <li className="lh-copy measure">A beautifully typeset, DRM-free PDF for reading on any device, replete with an index for quick reference.</li>
+            <li className="lh-copy measure">DRM-free EPUB and Kindle versions</li>
+            <li className="lh-copy measure">A plain text Markdown version for all the grepping your heart desired</li>
           </ul>
         </div>
       </section>
       <section className="pa3 pt0 pt3-ns bg-white near-black ma0">
         <div className="center-ns mw6-ns cf">
-          <h2 className="f3 tc">Prefer it in print?</h1>
+          <h2 className="f3 tc">Prefer it in print?</h2>
           <div className="w5 center tc dn-ns">
             <img src="/images/book.jpg" />
           </div>
@@ -149,7 +142,7 @@ export default function(props) {
       </section>
       <section className="pa3 ma0 bg-near-black near-white">
         <div className="center-ns mw6-ns cf">
-          <h2 className="f3 lh-title">About Me <span class="dib">(the Author)</span></h1>
+          <h2 className="f3 lh-title">About Me <span class="dib">(the Author)</span></h2>
           <img src="/images/DavidCopeland.jpg" className="fl mt2 mr3 mb2 br3 mw-2 w-25" />
           <p className="lh-copy measure">
             My name is David Bryant Copeland and I've spent the last eight years working on long-lived Rails apps. I've worked on a huge monolith whose construction was not managed as well as greenfield apps that evolved over many years from monoliths to a microservices architecture.
@@ -169,7 +162,7 @@ export default function(props) {
           <div className="mw7-ns center-ns">
             Table of Contents
           </div>
-        </h1>
+        </h2>
         <a className="ma0 pa0" name="outline">
           <section className="ph4-ns pl2 mw7-ns center-ns">
             <TOC />
