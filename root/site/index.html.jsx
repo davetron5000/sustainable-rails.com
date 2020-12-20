@@ -23,7 +23,13 @@ export default function(props) {
         </div>
         <div className="pa0 tc ma3-ns mt4 mt3-ns mb4">
           <a href="#versions" className="link underline book-gray f7">
-            works with Rails 6.1
+            Works with Rails 6.1
+          </a>
+          <span className="ph2 tc">
+          &middot;
+          </span>
+          <a href="#pricing" className="link underline book-gray f7">
+            Discounts for outside of the U.S.
           </a>
         </div>
       </div>
@@ -136,6 +142,17 @@ export default function(props) {
           </ul>
           <p className="lh-copy measure center f6">
             The book's guidance can be applied to <strong>any</strong> version of Rails, but the code samples use the non-deprecated APIs for Rails 6.1
+          </p>
+        </div>
+        </a>
+        <a name="pricing">
+        <div className="tc mt5-ns">
+          <h3>International Pricing</h3>
+          <p className="lh-copy measure center f6 tl">
+            I realize the cost of living outside the United States can be wildly different from living in the U.S. and that a $50 book can be a big investment.  I have created several discount codes that will bring the price down to a level that's more in line with the purchasing power in your country.
+          </p>
+          <p className="lh-copy measure center f6 tl">
+            It's not perfect, and you are on your honor to choose the best discount for where you live.  Visit <a href="https://naildrivin5.com/books/index.html#pricing" target="_new">my website</a> for more info and then use the best code <a className="link underline" href={ SiteData.buy_now_link }>at checkout</a> for the eBook.  If you are buying the <a className="link underline" href={ SiteData.buy_print_link }>print book from Amazon</a>, I have adjusted the pricing in Amazon already, though Amazon only allows me to set pricing for certain countries.
           </p>
         </div>
         </a>
