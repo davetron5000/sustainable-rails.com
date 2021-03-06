@@ -10,7 +10,7 @@ export default class TOC extends React.Component {
             <ol start="1">
             <li className="f5 fw5">
             Why This Book Exists <div className="db f6 i"><a href="chapter1.html">[read full chapter online]</a>{ " " }
-            <a href="/assets/sustainable-rails-sample.pdf">[as PDF]</a></div>
+            <a href="/assets/sustainable-rails-sample.pdf">[ or as PDF ]</a></div>
             <ol>
               <li className="f6 normal">What is Sustainability?</li>
               <li className="f6 normal">Why Care About Sustainability?</li>

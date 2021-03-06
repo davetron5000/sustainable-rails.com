@@ -42,7 +42,7 @@
     "build": "yarn build:webpack_input && yarn build:webpack_output",
     "build:webpack_input": "node src/commands/build.js",
     "build:webpack_output": "NODE_DISABLE_COLORS=1 webpack --config=src/webpack.config.js  --verbose --display-error-details --no-color",
-    "upload": "aws s3 sync --cache-control=\"max-age=3600\" --profile=personal root/deploy_to_production/ s3://sustainable-rails.com",
+    "upload": "aws s3 sync --cache-control=\"public, no-cache, must-revalidate, max-age=31536000\" --profile=personal root/deploy_to_production/ s3://sustainable-rails.com",
     "invalidate": "aws cloudfront create-invalidation --profile=personal --distribution-id=EZMRYXFNEDX45 --paths /index.html /chapter1.html /thanks.html /images/cover.png /assets/sustainable-rails-sample.pdf /assets/sustainable-rails-sample-code.zip",
     "deploy": "yarn production:build && yarn upload && yarn invalidate"
   }

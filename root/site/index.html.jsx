@@ -17,9 +17,9 @@ export default function(props) {
           <a href={ SiteData.buy_print_link } className="link underline book-gray">
             { "or Buy in Print for "  + SiteData.print_price }
           </a>
-          <sup>
-            <a href="#both" className="link book-gray b">&dagger;</a>
-          </sup>
+          <div class="mt2">
+            <a href="#both" className="link book-gray f7 i underline">(no package deal, sorry)</a>
+          </div>
         </div>
         <div className="pa0 tc ma3-ns mt4 mt3-ns mb4">
           <a href="#versions" className="link underline book-gray f7">
@@ -99,11 +99,11 @@ export default function(props) {
         <div className="center-ns mw6-ns cf">
           <h2 className="f3 tc">What You Get</h2>
           <div className="w4 center tc dn-ns">
-            <img src="/images/tablet.jpg" />
+            <img src="/images/tablet.jpg" alt="Picture of the book as shown on a tablet"/>
           </div>
           <div className="w4 fr dn db-ns ml4">
             <figure class="pa2 br3 ma0 bg-white">
-            <img src="/images/tablet.jpg" className="db"/>
+            <img src="/images/tablet.jpg" className="db" alt="Picture of the book as shown on a tablet"/>
             </figure>
           </div>
           <ul>
@@ -118,16 +118,16 @@ export default function(props) {
         <div className="center-ns mw6-ns cf">
           <h2 className="f3 tc">Prefer it in print?</h2>
           <div className="w5 center tc dn-ns">
-            <img src="/images/book.jpg" />
+            <img src="/images/book.jpg" alt="Picture of the book"/>
           </div>
           <div className="w5 dn db-ns fl">
-            <img src="/images/book.jpg" />
+            <img src="/images/book.jpg" alt="Picture of the book"/>
           </div>
           <div className="mt5-ns">
             <a className="db tr link underline book-gray tl-ns" href={ SiteData.buy_print_link }>{ SiteData.print_price } from Amazon</a>
             <a name="both">
             <p className="lh-copy f7 i pl5 tr tl-ns mt3">
-              <sup>*</sup>Due to the realities of self-publishing, I can't offer you a package deal on both the ebook and the print version.  My recommendation is to buy the version that you find most comfortable for reading.
+              <strong>Why no package on both?</strong> Due to the realities of self-publishing, I can't offer you a package deal on both the ebook and the print version.  My recommendation is to buy the version that you find most comfortable for reading.
             </p>
             </a>
           </div>
@@ -160,7 +160,7 @@ export default function(props) {
       <section className="pa3 ma0 bg-near-black near-white">
         <div className="center-ns mw6-ns cf">
           <h2 className="f3 lh-title">About Me <span class="dib">(the Author)</span></h2>
-          <img src="/images/DavidCopeland.jpg" className="fl mt2 mr3 mb2 br3 mw-2 w-25" />
+          <img src="/images/DavidCopeland.jpg" className="fl mt2 mr3 mb2 br3 mw-2 w-25" alt="Photo of David Copeland, the author"/>
           <p className="lh-copy measure">
             My name is David Bryant Copeland and I've spent the last eight years working on long-lived Rails apps. I've worked on a huge monolith whose construction was not managed as well as greenfield apps that evolved over many years from monoliths to a microservices architecture.
           </p>
@@ -180,11 +180,10 @@ export default function(props) {
             Table of Contents
           </div>
         </h2>
-        <a className="ma0 pa0" name="outline">
-          <section className="ph4-ns pl2 mw7-ns center-ns">
-            <TOC />
-          </section>
-        </a>
+        <a className="ma0 pa0" name="outline">&nbsp;</a>
+        <section className="ph4-ns pl2 mw7-ns center-ns">
+          <TOC />
+        </section>
       </section>
       <section className="bg-light-gray near-black pa3 pt4-ns">
         <div className="mw6-ns center-ns tc-ns">

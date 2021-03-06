@@ -21,10 +21,10 @@ export default class Layout extends React.Component {
     let image = (
       <div>
         <div className="db dn-ns w5 center">
-          <img src="/images/book-with-tablet-mobile-1000.jpg" />
+          <img src="/images/book-with-tablet-mobile-1000.jpg" alt="picture of the book with a table and mobile version"/>
         </div>
         <div className="db-ns dn w5">
-          <img src="/images/book-with-tablet-mobile-1000.jpg" className="db fl" />
+          <img src="/images/book-with-tablet-mobile-1000.jpg" className="db fl" alt="picture of the book with a table and mobile version"/>
         </div>
       </div>
     )
@@ -57,10 +57,10 @@ export default class Layout extends React.Component {
 <html lang="en">
   <head>
     <meta charSet="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="copyright" href={ "Copyright (c) " + copyright.string + " " + author + ", All Rights Reserved" } />
 
-    <title></title>
+    <title>{ title }</title>
 
     <SocialMediaCardMetadata
       description={ description }
@@ -72,17 +72,6 @@ export default class Layout extends React.Component {
     <SiteIcons />
   </head>
   <body className="ma0 pa0">
-    <aside className="bg-black white tc f4 pa3">
-      <p className="pa0 ma0 mb1">
-      #BlackLivesMatter
-      </p>
-      <p className="pa0 ma0 mb1 f5">
-      50% of all profits until end of 2020 go to <a className="link underline white" href={ SiteData.donations.link }><span className="light-gray">{ SiteData.donations.name }</span></a>.
-      </p>
-      <p className="pa0 ma0 f6">
-        <a href="https://naildrivin5.com/blm.html" className="i underline link white"><span className="white">Read More</span></a>
-      </p>
-    </aside>
     { header }
     <main>
       { this.props.children }
