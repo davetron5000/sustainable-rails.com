@@ -7,6 +7,16 @@ import TOC from "./components/TOC";
 import SiteData from "./derived_site_data.js"
 
 export default function(props) {
+  const hardcover_info = (
+    <li class="lh-copy">
+      <span className="db tc tl-ns book-gray">Hardcover edition coming soon!</span>
+    </li>
+  )
+  const real_hc = (
+    <li class="lh-copy">
+      <a className="db tc tl-ns link underline book-gray" href={ SiteData.buy_print_hc_link }>{ SiteData.print_hc_price } from Amazon (hard cover)</a>
+    </li>
+  )
   return(
     <Layout>
       <div className="pa2-ns pa0 tc ma1-ns ma0 mt2 mb2">
@@ -119,9 +129,7 @@ export default function(props) {
               <li class="lh-copy">
                 <a className="db tc tl-ns link underline book-gray" href={ SiteData.buy_print_link }>{ SiteData.print_price } from Amazon (soft cover)</a>
               </li>
-              <li class="lh-copy">
-                <a className="db tc tl-ns link underline book-gray" href={ SiteData.buy_print_hc_link }>{ SiteData.print_hc_price } from Amazon (hard cover)</a>
-              </li>
+              { hardcover_info }
             </ul>
             <a name="both">
             <p className="lh-copy f7 i ph3 tc tl-ns mt3">
