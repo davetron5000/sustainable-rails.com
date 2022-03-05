@@ -10,26 +10,17 @@ export default function(props) {
   return(
     <Layout>
       <div className="pa2-ns pa0 tc ma1-ns ma0 mt2 mb2">
-        <a href={ SiteData.buy_now_link } className="futura link f4-ns f5 nowrap fw7 br3 mt2 ph4 pv2 book-gray-gradient bg-book-blue book-blue pointer dib">
+        <a href={ SiteData.buy_now_link } className="futura link f4-ns f5 nowrap fw7 br3 mt2 ph4 pv2 book-gray-gradient pointer dib book-blue-glow tracked">
           { "Buy e-Book "  + SiteData.price }
         </a>
         <div className="pa0 tc ma3-ns mt4 mt3-ns mb4">
           <a href={ SiteData.buy_print_link } className="link underline book-gray">
-            { "or Buy in Print for "  + SiteData.print_price }
+            { "or Buy in Print from "  + SiteData.print_price }
           </a>
-          <div class="mt2">
-            <a href="#both" className="link book-gray f7 i underline">(no package deal, sorry)</a>
-          </div>
         </div>
         <div className="pa0 tc ma3-ns mt4 mt3-ns mb4">
-          <a href="#versions" className="link underline book-gray f7">
-            Works with Rails 6.1
-          </a>
-          <span className="ph2 tc">
-          &middot;
-          </span>
-          <a href="#pricing" className="link underline book-gray f7">
-            Discounts for outside of the U.S.
+          <a href="#pricing" className="db d-ns mh3 mt3 ma0-ns link underline book-gray f7">
+            Not from the USA? You may be able to get a discount!
           </a>
         </div>
       </div>
@@ -60,7 +51,7 @@ export default function(props) {
           <li className="tl tc-ns futura lh-title mb3 ph0 mh0"><p className="measure-narrow-ns center-ns">Manage and isolate your business logic without fancy patterns or libraries</p></li>
         </ul>
         <p className="lh-copy f6 tc mt4">
-          <a href={ SiteData.buy_now_link } className="bright-blue b">
+          <a href={ SiteData.buy_now_link } className="b book-blue-glow-muted">
           { "Buy Now for "  + SiteData.price }
           </a>,{ " " }
           <a className="dib bright-blue" href="/assets/sustainable-rails-sample.pdf">read a Sample</a>, or <a className="dib bright-blue" href="#outline">see the full Table of Contents</a>.
@@ -124,10 +115,17 @@ export default function(props) {
             <img src="/images/book.jpg" alt="Picture of the book"/>
           </div>
           <div className="mt5-ns">
-            <a className="db tr link underline book-gray tl-ns" href={ SiteData.buy_print_link }>{ SiteData.print_price } from Amazon</a>
+            <ul class="list ma0 pa0">
+              <li class="lh-copy">
+                <a className="db tc tl-ns link underline book-gray" href={ SiteData.buy_print_link }>{ SiteData.print_price } from Amazon (soft cover)</a>
+              </li>
+              <li class="lh-copy">
+                <a className="db tc tl-ns link underline book-gray" href={ SiteData.buy_print_hc_link }>{ SiteData.print_hc_price } from Amazon (hard cover)</a>
+              </li>
+            </ul>
             <a name="both">
-            <p className="lh-copy f7 i pl5 tr tl-ns mt3">
-              <strong>Why no package on both?</strong> Due to the realities of self-publishing, I can't offer you a package deal on both the ebook and the print version.  My recommendation is to buy the version that you find most comfortable for reading.
+            <p className="lh-copy f7 i ph3 tc tl-ns mt3">
+              <strong class="dib">Why no package on print and electronic?</strong> Due to the realities of self-publishing, I can't offer you a package deal on both the ebook and the print version.  My recommendation is to buy the version that you find most comfortable for reading.
             </p>
             </a>
           </div>
@@ -136,12 +134,12 @@ export default function(props) {
         <div className="tc mt5-ns">
           <h3>Versions</h3>
           <ul className="list pa0 ma0">
-            <li className="lh-copy di">Rails 6.1</li>
+            <li className="lh-copy di">Rails 7</li>
             <li ariaRole="non" className="lh-copy di ph3">&middot;</li>
-            <li className="lh-copy di">Ruby 2.7.2</li>
+            <li className="lh-copy di">Ruby 3.1.0</li>
           </ul>
           <p className="lh-copy measure center f6">
-            The book's guidance can be applied to <strong>any</strong> version of Rails, but the code samples use the non-deprecated APIs for Rails 6.1
+            The book's guidance can be applied to <strong>any</strong> version of Rails, but the code samples use the non-deprecated APIs for Rails 7
           </p>
         </div>
         </a>

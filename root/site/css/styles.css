@@ -25,6 +25,30 @@ h1, h2, h3, h4, h5, .futura {
 .bg-bright-blue { background-color: #74F7FF !important; }
 .bg-book-blue { background-color: #52D5EF; }
 .blue { color: #095060; }
+
+.book-blue-glow {
+  color: #74F7FF !important;
+  text-shadow:
+    0 0 2px #74F7FF,
+    0 0 4px #74F7FF,
+    0 0 7px #74F7FF,
+    0 0 9px #0af,
+    0 0 11px #0bf,
+    0 0 13px #0cf,
+    0 0 15px #0df;
+}
+
+.book-blue-glow-muted {
+  color: #74F7FF !important;
+  text-shadow:
+    0 0 1px #74F7FF,
+    0 0 3px #52d5dd,
+    0 0 5px #30b3bb,
+    0 0 9px #0af,
+    0 0 10px #0bf,
+    0 0 11px #0cf,
+    0 0 12px #0df;
+}
 a:visited {
   color: #095060;
 }

@@ -10,7 +10,7 @@ export default class TOC extends React.Component {
             <ol start="1">
             <li className="f5 fw5">
             Why This Book Exists <div className="db f6 i"><a href="chapter1.html">[read full chapter online]</a>{ " " }
-            <a href="/assets/sustainable-rails-sample.pdf">[ or as PDF ]</a></div>
+            <a href="/assets/sustainable-rails-sample.pdf">[as PDF]</a></div>
             <ol>
               <li className="f6 normal">What is Sustainability?</li>
               <li className="f6 normal">Why Care About Sustainability?</li>
@@ -72,7 +72,8 @@ export default class TOC extends React.Component {
               <li className="f6 normal">Never Configure Routes That Aren’t Being Used</li>
               <li className="f6 normal">Vanity URLs Should Redirect to a Canonical Route</li>
               <li className="f6 normal">Don’t Create Custom Actions, Create More Resources</li>
-              <li className="f6 normal">Be Wary of Nested Routes</li>
+              <li className="f6 normal">Use Nested Routes Strategically</li>
+              <li className="f6 normal">Nested Routes Can Organize Content Pages</li>
             </ol>
             </li>
             <li className="f5 fw5">
@@ -88,7 +89,8 @@ export default class TOC extends React.Component {
             Helpers
             <ol>
               <li className="f6 normal">Don’t Conflate Helpers with Your Domain</li>
-              <li className="f6 normal">Helpers Are Best At Markup and Formatting</li>
+              <li className="f6 normal">Helpers are Best at Exposing Global UI State and Generating Markup</li>
+              <li className="f6 normal">Define Helpers in As Few Locations as Possible</li>
               <li className="f6 normal">Presenters, Decorators, and View Models Have Their Own Problems</li>
               <li className="f6 normal">Use Rails’ APIs to Generate Markup</li>
               <li className="f6 normal">Helpers Should Be Tested and Thus Testable</li>
@@ -107,7 +109,7 @@ export default class TOC extends React.Component {
             <ol>
               <li className="f6 normal">How and Why JavaScript is a Serious Liability</li>
               <li className="f6 normal">Embrace Server-Rendered Rails Views</li>
-              <li className="f6 normal">Disable Remote-Forms-By-Default and Tweak Turbolinks</li>
+              <li className="f6 normal">Tweak Turbo to Provide a Slightly Better Experience</li>
             </ol>
             </li>
             <li className="f5 fw5">
@@ -115,7 +117,7 @@ export default class TOC extends React.Component {
             <ol>
               <li className="f6 normal">Embrace Plain JavaScript for Basic Interactions</li>
               <li className="f6 normal">Carefully Choose One Framework When You Need It</li>
-              <li className="f6 normal">Unit Test As Much of Your JavaScript as You Can</li>
+              <li className="f6 normal">Ensure System Tests Fail When JavaScript is Broken</li>
             </ol>
             </li>
             <li className="f5 fw5">

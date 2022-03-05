@@ -21,10 +21,10 @@ export default class Layout extends React.Component {
     let image = (
       <div>
         <div className="db dn-ns w5 center">
-          <img src="/images/book-with-tablet-mobile-1000.jpg" alt="picture of the book with a table and mobile version"/>
+          <img src="/images/book-with-tablet-mobile-1000.jpg" alt="picture of the book with a tablet and mobile version"/>
         </div>
         <div className="db-ns dn w5">
-          <img src="/images/book-with-tablet-mobile-1000.jpg" className="db fl" alt="picture of the book with a table and mobile version"/>
+          <img src="/images/book-with-tablet-mobile-1000.jpg" className="db fl" alt="picture of the book with a tablet and mobile version"/>
         </div>
       </div>
     )
@@ -72,6 +72,9 @@ export default class Layout extends React.Component {
     <SiteIcons />
   </head>
   <body className="ma0 pa0">
+    <aside className="db w-100 pv3 ttu tracked tc futura book-blue-glow bg-book-gray">
+        <span role="img" aria-label="star">🌟</span> Updated for Rails 7!
+    </aside>
     { header }
     <main>
       { this.props.children }
