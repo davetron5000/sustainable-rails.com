@@ -168,7 +168,7 @@ export default function(props) {
           <h2 className="f3 lh-title">About Me <span class="dib">(the Author)</span></h2>
           <img src="/images/DavidCopeland.jpg" className="fl mt2 mr3 mb2 br3 mw-2 w-25" alt="Photo of David Copeland, the author"/>
           <p className="lh-copy measure">
-            My name is David Bryant Copeland and I've spent the last eight years working on long-lived Rails apps. I've worked on a huge monolith whose construction was not managed as well as greenfield apps that evolved over many years from monoliths to a microservices architecture.
+            My name is David Bryant Copeland and I've spent the last nine years working on long-lived Rails apps. I've worked on a huge monolith whose construction was not managed as well as greenfield apps that evolved over many years from monoliths to a microservices architecture.
           </p>
           <p className="lh-copy measure">13 years prior to that I worked on various technologies and apps both for consulting clients and startups.  Lastly, I've advised several startups using Rails and seen first-hand how small mistakes made early on can have a cascading effect on team sustainabilty.
           </p>
