@@ -28,13 +28,23 @@ export default class Layout extends React.Component {
         </div>
       </div>
     )
+    let aside = (
+      <aside className="db w-100 pv3 ttu tracked tc futura book-blue-glow bg-book-gray">
+        <a href="/rails7.html" className="book-blue-glow link">
+          <span role="img" aria-label="star">🌟</span> Updated for Rails 7!
+        </a>
+      </aside>
+    )
 
+    let alignment = "tc tl-ns"
     if (this.props.compact) {
-      byline = null
-      image  = null
+      byline    = null
+      image     = null
+      alignment = "tc"
+      aside     = null
     }
     let header = (
-      <header className="cf mt3 ph3 tc tl-ns bg-white black">
+      <header className={ "cf mt3 ph3 bg-white black " + alignment }>
         { image }
         <h1 className="mt3 mb0 f3 f2-ns">
           <a href="/" className="link book-gray f3 f2-ns">
@@ -72,9 +82,7 @@ export default class Layout extends React.Component {
     <SiteIcons />
   </head>
   <body className="ma0 pa0">
-    <aside className="db w-100 pv3 ttu tracked tc futura book-blue-glow bg-book-gray">
-        <span role="img" aria-label="star">🌟</span> Updated for Rails 7!
-    </aside>
+    { aside }
     { header }
     <main>
       { this.props.children }

@@ -147,7 +147,7 @@ export default function(props) {
             <li className="lh-copy di">Ruby 3.1.0</li>
           </ul>
           <p className="lh-copy measure center f6">
-            The book's guidance can be applied to <strong>any</strong> version of Rails, but the code samples use the non-deprecated APIs for Rails 7
+            The book's guidance can be applied to <strong>any</strong> version of Rails, but the code samples use the non-deprecated APIs for Rails 7. <a href="/rails7.html">See what's changed since the Rails 6 version</a>.
           </p>
         </div>
         </a>

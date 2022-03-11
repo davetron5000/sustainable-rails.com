@@ -11,6 +11,10 @@ export default {
       "relative_url": "/index.html"
     },
     {
+      "title": "Rails7",
+      "relative_url": "/rails7.html"
+    },
+    {
       "title": "Tech_reviewers",
       "relative_url": "/tech_reviewers.html"
     },
