@@ -110,7 +110,7 @@ export default function(props) {
           <ul>
             <li className="lh-copy measure">Over 450 Pages of practical tips on building Rails apps</li>
             <li className="lh-copy measure">A beautifully typeset, DRM-free PDF for reading on any device, replete with an index for quick reference.</li>
-            <li className="lh-copy measure">DRM-free EPUB and Kindle versions</li>
+            <li className="lh-copy measure">DRM-free EPUB that works with iBooks, Kindle and more!</li>
             <li className="lh-copy measure">A plain text Markdown version for all the grepping your heart desired</li>
           </ul>
         </div>
