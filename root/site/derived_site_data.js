@@ -34,7 +34,7 @@ export default {
   "print_hc_price": "$59.95",
   "buy_now_link": "https://sowl.co/boqdo7",
   "buy_print_link": "https://bit.ly/sustainable-rails-print",
-  "buy_print_hc_link": "https://bit.ly/sustainable-rails-print-hc",
+  "buy_print_hc_link": "https://amzn.to/3LuJ1B8",
   "tss": {
     "link": "http://bit.ly/dcsweng"
   },
