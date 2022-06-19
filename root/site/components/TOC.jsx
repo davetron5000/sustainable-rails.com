@@ -128,6 +128,7 @@ export default class TOC extends React.Component {
               <li className="f6 normal">Test Against Default Markup and Content Initially</li>
               <li className="f6 normal">Cultivate Explicit Diagnostic Tools to Debug Test Failures</li>
               <li className="f6 normal">Fake The Back-end To Get System Tests Passing</li>
+              <li className="f6 normal">Use data-testid Attributes to Combat Brittle Tests</li>
               <li className="f6 normal">Test JavaScript Interactions with a Real Browser</li>
             </ol>
             </li>
