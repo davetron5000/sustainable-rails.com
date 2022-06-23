@@ -79,7 +79,7 @@ const default_html_plugin_options = (config) => {
         "removeAttributeQuotes": false,
         "removeComments": true,
         "removeEmptyAttributes": true,
-        "removeEmptyElements": true,
+        "removeEmptyElements": false,
         "removeOptionalTags": false,
         "removeRedundantAttributes": true,
         "removeScriptTypeAttributes": true,
