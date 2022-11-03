@@ -82,7 +82,7 @@ export default class Layout extends React.Component {
     <SiteIcons />
   </head>
   <body className="ma0 pa0">
-    <a style={ display: "none" } rel="me" href="https://ruby.social/@davetron5000">Mastodon</a>
+    <a style={ { display: "none" } } rel="me" href="https://ruby.social/@davetron5000">Mastodon</a>
     { aside }
     { header }
     <main>
