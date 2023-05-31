@@ -15,7 +15,7 @@ export default function(props) {
   return(
     <Layout>
       <div className="pa2-ns pa0 tc ma1-ns ma0 mt2 mb2">
-        <a href={ SiteData.buy_now_link } className="futura link f4-ns f5 nowrap fw7 br3 mt2 ph4 pv2 book-gray-gradient pointer dib book-blue-glow tracked">
+        <a href={ SiteData.buy_now_link } className="futura link f4-ns f5 nowrap fw7 br3 mt2 ph4 pv2 book-gray-gradient pointer dib book-blue tracked">
           { "Buy e-Book "  + SiteData.price }
         </a>
         <div className="pa0 tc ma3-ns mt4 mt3-ns mb4">

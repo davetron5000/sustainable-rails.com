@@ -41,5 +41,23 @@ export default {
   "author": "David Bryant Copeland",
   "description": "Website for the book Sustainable Web Development with Ruby on Rail",
   "twitter": "@davetron5000",
-  "url": "https://sustainable-rails.com"
+  "url": "https://sustainable-rails.com",
+  "beta_price": "$29.95",
+  "price": "$49.95",
+  "print_price": "$49.95",
+  "print_hc_price": "$59.95",
+  "buy_now_link": "https://sowl.co/boqdo7",
+  "buy_print_link": "https://bit.ly/sustainable-rails-print",
+  "buy_print_hc_link": "https://amzn.to/3LuJ1B8",
+  "tss": {
+    "link": "http://bit.ly/dcsweng"
+  },
+  "solid_not_solid": {
+    "link": "http://bit.ly/buy-not-solid"
+  },
+  "donations": {
+    "name": "The Bail Project",
+    "link": "https://bailproject.org"
+  },
+  "updates": []
 }
