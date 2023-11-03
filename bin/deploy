@@ -3,6 +3,14 @@
 set -e
 
 bin/build production
+rm -rf site/production
+echo "Inside Docker, execute:"
+echo 
+echo "    bin/build production"
+echo 
+echo "Hit return when done"
+read
 aws s3 sync --cache-control="public, no-cache, must-revalidate, max-age=31536000" --profile=personal site/production s3://sustainable-rails.com
 aws cloudfront create-invalidation --profile=personal --distribution-id=EZMRYXFNEDX45 --paths="/*"
+echo done
 
