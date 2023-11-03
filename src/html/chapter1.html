@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <%- include("templates/head.html", { title: "Chatper 1 of the book 'Sustainable Web Development with Ruby on Rails'",
+                                         description: null,
+                                         url: "https://sustainable-rails.com/chapter1.html",
+                                       }) %>
+  </head>
+  <body class="ma0 pa0">
+    <a href="https://ruby.social/@davetron5000" rel="me" style="display:none">Mastodon</a>
+    <header class="ph3 bg-white black cf mt3 tc bb pb3">
+      <h1 class="f3 f2-ns mb0 mt3 lh-title">
+        <div class="db fw3 book-gray">
+        Excerpt from
+        </div>
+        <a href="/" class="f3 f2-ns book-gray link">
+          <span class="book-gray">Sustainable Web Development</span>
+        </a>
+        <div class="f3 f2-ns mb0 mt0">with Ruby on Rails</div>
+      </h1>
+    </header>
+    <main>
+      <article>
+        <a name="main">
+        </a>
+        <h2 class="ph2 ph2 pl3-ns tc f3" id="why-this-book-exists">Chapter 1 - Why This Book Exists
+        </h2>
+        <p class="ph3 lh-copy measure center">Rails can scale. But what does that actually mean? And how do we do it? This book is the answer to both of these questions, but instead of using "scalable", which many developers equate with "fast performance", I'm using the word "sustainable", because this is really what we want out of our software: the ability to sustain it over time.</p>
+        <p class="ph3 lh-copy measure center">Rails itself is an important component in sustainable web development, since it provides common solutions to common problems and has reached a significant level of maturity. But it's not the complete picture.</p>
+        <p class="ph3 lh-copy measure center">Rails has a lot of features and we may not need them all, or we may need to take some care in how we use them. Rails also leaves gaps in your application's architecture that you'll have to fill (which makes sense, since Rails can't possibly provide <em>everything</em> your app will need).</p>
+        <p class="ph3 lh-copy measure center">This book will help you navigate all of that.</p>
+        <p class="ph3 lh-copy measure center">Before we begin, I want to be clear about what <em>sustainability</em> means and why it's important. I also want to state the assumptions I'm making in writing this, because there is no such thing as universal advice—there's only recommendations that apply in a given context.</p>
+        <h3 class="center ph2 pl3-ns tc f4" id="what-is-sustainability-">1.2 What is Sustainability?</h3>
+        <p class="ph3 lh-copy measure center">The literal interpretation of sustainable web development is web development that can be sustained. As silly as that definition is, I find it an illuminating restatement.</p>
+        <p class="ph3 lh-copy measure center">To <em>sustain</em> the development of our software is to ensure that it can continue to meet its needs. A sustainable web app can easily suffer new requirements, increased demand for its resources, and an increasing (or changing) team of developers to maintain it.</p>
+        <p class="ph3 lh-copy measure center">A system that is hard to change is hard to sustain. A system that can't avail itself of the resources it needs to function is hard to sustain. A system that only <em>some</em> developers can work on is hard to sustain.</p>
+        <p class="ph3 lh-copy measure center">Thus, a sustainable application is one in which changes we make tomorrow as as easy as changes are today, for whatever the application might need to do and whoever might be tasked with working on it.</p>
+        <p class="ph3 lh-copy measure center">So this defines <em>sustainability</em>, but why is it important?</p>
+        <h3 class="ph2 pl3-ns tc f4" id="why-care-about-sustainability-">1.3 Why Care About Sustainability?</h3>
+        <p class="ph3 lh-copy measure center">Most software exists to meet some need, and if that need will persist over time, so must the software. <em>Needs</em> are subjective and vague, while software must be objective and specific. Thus, building software is often a matter of continued refinement as the needs are slowly clarified. And, of course, needs have a habit of changing along the way.</p>
+        <p class="ph3 lh-copy measure center">Software is expensive, mostly owing to the expertise required to build and maintain it. The ability to write software is one of the most in-demand skills, garnering some of the highest wages in the world, even at entry levels. It stands to reason that if a piece of software requires more effort to enhance and maintain over time, it will cost more and more and deliver less and less.</p>
+        <p class="ph3 lh-copy measure center">In an economic sense, sustainable software minimizes the cost of the software over time. But there is a human cost to working on software. Working on sustainable software is, well, more enjoyable. They say employees quit managers, but I've known developers that quit codebases. Working on unsustainable software just plain sucks, and I think there's value in having a job that doesn't suck…at least not all of the time.</p>
+        <p class="ph3 lh-copy measure center">Of course, it's one thing to care about sustainability in the abstract, but how does that translate into action?</p>
+        <h3 class="ph2 pl3-ns tc f4" id="how-to-value-sustainability-">1.4 How to Value Sustainability?</h3>
+        <p class="ph3 lh-copy measure center">Sustainability is like an investment. It necessarily won't pay off in the short term and, if the investment isn't sound, it won't ever pay off. So it's really important to understand the value of sustainability to your given situation and to have access to as much information as possible to know exactly how to invest in it.</p>
+        <p class="ph3 lh-copy measure center">Predicting the future is dangerous for programmers. It can lead to over-engineering, which makes certain classes of changes more difficult in the future. To combat this urge, developers often look to the tenets of agile software development, which have many cute aphorisms that boil down to "don't build software that you don't know you need".</p>
+        <p class="ph3 lh-copy measure center">If you are a hired consultant, this is excellent advice. It gives you a framework to be successful and manage change when you are in a situation where you have very little access to information. The strategy of "build for only what you 100% know you need" works great to get software shipped with confidence, but it doesn't necessarily lead to a sustainable outcome.</p>
+        <p class="ph3 lh-copy measure center">For example, no business person is going to ask you to write log statements so you can understand your code in production. No product owner is going to ask you to create a design system to facilitate building user interfaces more quickly. And no one is going to require that your database has referential integrity.</p>
+        <p class="ph3 lh-copy measure center">The features of the software are merely one input into what software gets built. They are a significant one, to be sure, but not the only one. To make better technical decisions, you need access to more information than simply what someone wants the software to do.</p>
+        <p class="ph3 lh-copy measure center">Do you know what economic or behavioral output the software exists to produce? In other words, how does the software make money for the people paying you to write it? What improvements to the business is it expected to make? What is the medium or long-term plan for the business? Does it need to grow significantly? Will there need to be increased traffic? Will there be an influx of engineers? Will they be very senior, very junior, or a mix? When will they be hired and when will they start?</p>
+        <p class="ph3 lh-copy measure center">The more information you can get access to, the better, because all of this feeds into your technical decision-making and can tell you just how sustainable your app needs to be. If there will be an influx of less experienced developers, you might make different decisions than if the team is only hiring one or two experienced specialists.</p>
+        <p class="ph3 lh-copy measure center">Armed with this sort of information, you can make technical decisions as part of an overall <em>strategy</em>. For example, you may want to spend several days setting up a more sustainable development environment. By pointing to the company's growth projections and your teams hiring plans, that work can be easily justified (see the sidebar <a href="#stitch-fix-growth">"Understanding Growth At Stitch Fix"</a> for a specific example of this).</p>
+        <a name="stitch-fix-growth">
+        </a>
+        <aside class="ph3 baskerville ba-ns bb bg-light-gray f6 br2-ns bt measure-ns near-black center">
+          <h2 class="f5 baskerville">Understanding Growth at Stitch Fix</h2>
+          <p class="ph3 lh-copy measure baskerville">During my first few months at Stitch Fix, I was asked to help improve the operations of our warehouse. There were many different processes and we had a good sense of which ones to start automating. At the time, there was only one application—called <span class="sc">Hellblazer</span>—and it served up <code>stitchfix.com</code>.</p>
+          <p class="ph3 lh-copy measure baskerville">If I hadn't been told anything else, the simplest thing to do would've been to make a <code>/warehouse</code> route in <span class="sc">Hellblazer</span> and slowly add features for the associates there. But I <em>had</em> been told something else.</p>
+          <p class="ph3 lh-copy measure baskerville">Like almost everyone at the company, the engineering team was told—very transparently—what the growth plans for the business were. It needed to grow in a certain way or the business would fail. It was easy to extrapolate from there what that would mean for the size of the engineering team, and for the significance of the warehouse's efficiency. It was clear that a single codebase everyone worked in would be a nightmare, and migrating away from it later would be difficult and expensive.</p>
+          <p class="ph3 lh-copy measure baskerville">So, we created a new application that shared <span class="sc">Hellblazer</span>'s database. It would've certainly been faster to add code to <span class="sc">Hellblazer</span> directly, but we knew doing so would burn us long-term. As the company grew, the developers working on warehouse software were fairly isolated since they worked in a totally different codebase. We replicated this pattern and, after six years of growth, it was clearly the right decision.</p>
+          <p class="ph3 lh-copy measure baskerville">But we never could've known that without a full understanding of the company's growth plans, and long-term vision for the problems we were there to solve.</p>
+        </aside>
+        <p class="ph3 lh-copy measure center">If you don't have the information about the business, the team, or anything other than what some user wants the software to do, you aren't set up to do sustainable development. But it doesn't mean you shouldn't ask anyway.</p>
+        <p class="ph3 lh-copy measure center">People who don't have experience writing software won't necessarily intuit that such information is relevant, so they might not be forthcoming. But you'd be surprised just how much information you can get from someone by just asking.</p>
+        <p class="ph3 lh-copy measure center">Whatever the answers are, you can use this as part of an overall technical strategy, of which sustainability is a part. As you read this book, I'll talk about the considerations around the various recommendations and techniques. They might not all apply to your situation, but many of them will.</p>
+        <p class="ph3 lh-copy measure center">Which brings us to the set of assumptions that this book is based on. In other words, what <em>is</em> the situation in which sustainability is important and in which this book's recommendations apply?</p>
+        <h3 class="ph2 pl3-ns tc f4" id="assumptions">1.5 Assumptions</h3>
+        <p class="ph3 lh-copy measure center">This book is pretty prescriptive, but each prescription comes with an explanation, and <em>all</em> of the book's recommendations are based on some key assumptions that I would like to state explicitly. If your situation differs wildly from the one described below, you might not get that much out of this book. My hope—and belief—is that the assumptions below are common, and that the situation you find yourself in writing software is similar to situations I have faced. Thus, this book will help you.</p>
+        <p class="ph3 lh-copy measure center">In case it's not, I want to state my assumptions up front, right here in this free chapter.</p>
+        <h4 class="ph2 pl3-ns tc f5 lh-title" id="the-software-has-a-clear-purpose">1.5.1 The Software Has a Clear Purpose</h4>
+        <p class="ph3 lh-copy measure center">This might seem like nonsense, but there are times when we don't exactly know what the software is solving for, yet need to write some software to explore the problem space.</p>
+        <p class="ph3 lh-copy measure center">Perhaps some venture capitalist has given us some money, but we don't yet know the exact market for our solution. Maybe we're prototyping a potentially complex UI to do user testing. In these cases we need to be nimble and try to figure out what the software should do.</p>
+        <p class="ph3 lh-copy measure center">So the assumption here is that that has happened. We know generally what problem we are solving, and we aren't going to have to pivot from selling shoes to providing AI-powered podiatrist back-office enterprise software.</p>
+        <h4 class="ph2 pl3-ns tc f5 lh-title" id="the-software-needs-to-exist-for-years">1.5.2 The Software Needs To Exist For Years</h4>
+        <p class="ph3 lh-copy measure center">This book is about how to sustain development over a longer period of time than a few months, so a big assumption is that the software actually <em>needs</em> to exist that long!</p>
+        <p class="ph3 lh-copy measure center">A lot of software falls into this category. If you are automating a business process, building a customer experience, or integrating some back-end systems, it's likely that software will continue to be needed for quite a while.</p>
+        <h4 class="ph2 pl3-ns tc f5 lh-title" id="the-software-will-evolve">1.5.3 The Software Will Evolve</h4>
+        <p class="ph3 lh-copy measure center">Sometimes we write code that solves a problem and that problem doesn't change, so the software is stable. That's not an assumption I am making here. Instead, I'm assuming that the software will be subject to changes big and small over the years it will exist.</p>
+        <p class="ph3 lh-copy measure center">I believe this is more common than not. Software is notoriously hard to get right the first time, so it's common to change it iteratively over a long period to arrive at optimal functionality. Software that exists for years also tends to need to change to keep up with the world around it.</p>
+        <h4 class="ph2 pl3-ns tc f5 lh-title" id="the-team-will-change">1.5.4 The Team Will Change</h4>
+        <p class="ph3 lh-copy measure center">The average tenure of a software engineer at any given company is pretty low, so I'm assuming that the software will outlive the team, and that the group of people charged with the software's maintenance and enhancement will change over time. I'm also assuming the experience levels and skill-sets will change over time as well.</p>
+        <h4 class="ph2 pl3-ns tc f5 lh-title" id="you-value-sustainability-consistency-and-quality">1.5.5 You Value Sustainability, Consistency, and Quality</h4>
+        <p class="ph3 lh-copy measure center">Values are fundamental beliefs that drive actions. While the other assumptions might hold for you, if you don't actually value sustainability, consistency, and quality, this book isn't going to help you.</p>
+        <h5 class="ph2 f6 ph3-ns tracked ttu tc" id="sustainability">Sustainability</h5>
+        <p class="ph3 lh-copy measure center">If you don't value sustainability as I've defined it, you likely didn't pick up this book or have stopped reading by now. You're here because you think sustainability is important, thus you <em>value</em> it.</p>
+        <h5 class="ph2 f6 ph3-ns tracked ttu tc" id="consistency">Consistency</h5>
+        <p class="ph3 lh-copy measure center">Valuing consistency is hugely important as well. Consistency means that things should not be arbitrarily different. Same problems should have same solutions, and there should not be many ways to do something. It also means being explicit that personal preferences are not critical inputs to decision-making.</p>
+        <p class="ph3 lh-copy measure center">A team that values consistency is a sustainable team and will produce sustainable software. When code is consistent, it can be confidently abstracted into shared libraries. When processes are consistent, they can be confidently automated to make everyone more productive.</p>
+        <p class="ph3 lh-copy measure center">When architecture and design are consistent, knowledge can be transferred, and the team, the systems, and even the business itself can survive potentially radical change (see the sidebar <a href="#aws-migration">"Our Uneventful Migration to AWS"</a> for how Stitch Fix capitalized on consistency to migrate from Heroku to AWS with no downtime or outages).</p>
+        <h5 class="tc ph2 f6 ph3-ns tracked ttu" id="quality">Quality</h5>
+        <p class="ph3 lh-copy measure center">Quality is a vague notion, but it's important to both understand it and to value it. In a sense, valuing quality means doing things right the first time. But "doing things right" doesn't mean over-engineering, gold-plating, or doing something fancy that's not called for.</p>
+        <p class="ph3 lh-copy measure center">Valuing quality is to acknowledge the reality that we aren't going to be able to go back and clean things up after they have been shipped. There is this fantasy developers engage in that they can simply "acquire technical debt" and someday "pay it down".</p>
+        <p class="ph3 lh-copy measure center">I have never seen this happen in the way developers think. It is extremely difficult to make a business case to modify working software simply to make it "higher quality". Usually, there must be some catastrophic failure to get the resources to clean up a previously-made mess. It's simpler and easier to manage a process by which messes don't get made as a matter of course.</p>
+        <a name="aws-migration">
+        </a>
+        <aside class="ph3 baskerville ba-ns bb bg-light-gray br2-ns bt measure-ns f6 near-black center">
+          <h2 class="f5 baskerville">Our Uneventful Migration to AWS</h2>
+          <p class="ph3 lh-copy measure baskerville">For several years, Stitch Fix used the platform-as-a-service Heroku. We were consistent in how we used it, as well as in how our applications were designed. We used one type of relational database, one type of cache, one type of CDN, etc.</p>
+          <p class="ph3 lh-copy measure baskerville">In our run-up to going public, we needed to migrate to AWS, which is <em>very</em> different from Heroku. We had a team of initially two people and eventually three to do the migration for the 100+ person engineering team. We didn't want downtime, outages, or radical changes in the developer experience.</p>
+          <p class="ph3 lh-copy measure baskerville">Because everything was so consistent, the migration team was able to quickly build a deployment pipeline and command-line tool to provide a Heroku-like experience to the developers. Over several months we migrated one app and one database at a time. Developers barely noticed, and our users and customers had no idea.</p>
+          <p class="ph3 lh-copy measure baskerville">The project lead was so confident in the approach and the team that he kept his scheduled camping trip to an isolated mountain in Colorado, unreachable by the rest of the team as they moved <code>stitchfix.com</code> from Heroku to AWS to complete the migration. Consistency was a big part of making this a non-event.</p>
+        </aside>
+        <p class="ph3 lh-copy measure center">Roll quality into the everyday process. Doing this consistently will result in predictable output, which is what managers really want to see. On the occasion when a date must be hit, cut scope, not corners. Only the developers know what scope to cut in order to get meaningfully faster delivery, but this requires having as much information about the business strategy as possible.</p>
+        <p class="ph3 lh-copy measure center">When you value sustainability, consistency, and quality, you will be unlikely to find yourself in a situation where you must undo a technical decision you made at the cost of shipping more features. Business people may want software delivered as fast as possible, but they <em>really</em> don't want to go an extended period without any features so that the engineering team can "pay down" technical debt.</p>
+        <p class="ph3 lh-copy measure center">The last bit of information I want to share is about me. This book amounts to my advice based on my experience, and you need to know about that, because, let's face it, the field of computer programming is pretty far away from science, and most of the advice we get is nicely-formatted survivorship bias.</p>
+        <h3 class="ph2 pl3-ns tc f4" id="why-should-you-trust-me-">1.6 Why should you trust me?</h3>
+        <p class="ph3 lh-copy measure center">Software engineering is notoriously hard to study and most of what exists about how to write software is anecdotal evidence or experience reports. This book is no different, but I do believe that if you are facing problems similar to those I have faced, there is value in here.</p>
+        <p class="ph3 lh-copy measure center">So I want to outline what my experience is that has led to me recommend what I do in this book.</p>
+        <p class="ph3 lh-copy measure center">The most important thing to know about me is that I'm not a software consultant, nor have I been in a very long time. For the past ten years I have been a product engineer, working for companies building one or more products designed to last. I was a rank and file engineer at times, a manager on occasion, and most recently, an architect (meaning I was responsible for technical strategy, but I assure you I wrote a <em>lot</em> of code).</p>
+        <p class="ph3 lh-copy measure center">What this means is that the experience upon which this book is based comes from actually building software meant to be sustained. I have actually done—and seen the long-term results of doing—pretty much everything in this book. I've been responsible for sustainable software several times over my career.</p>
+        <ul>
+          <li>
+            <p class="ph3 lh-copy measure center">I spent four years at an energy startup that sold enterprise software. I saw the product evolve from almost nothing to a successful company with many clients and over 100 engineers. While the software was Java-based, much of what I learned about sustainability applies to the Rails world as well.</p>
+          </li>
+          <li>
+            <p class="ph3 lh-copy measure center">I spent the next year and half at an e-commerce company that had reached what would be the peak of its success. I joined a team of almost 200 engineers, many of whom were working in a huge Rails monolith that contained thousands of lines of code, all done "The Rails Way". The team had experienced massive growth and this growth was not managed. The primary application we all worked in was wholly unsustainable and had a massive carrying cost simply existing.</p>
+          </li>
+          <li>
+            <p class="ph3 lh-copy measure center">I then spent the next six and half years at Stitch Fix, where I was the third engineer and helped set the technical direction for the team. By the time I left, the team was 200 engineers, collectively managing a microservices-based architecture of over 50 Rails applications, many of which I contributed to. At that time I was responsible for the overall technical strategy for the team and was able to observe which decisions we made in 2013 ended up being good (or bad) by 2019.</p>
+          </li>
+        </ul>
+        <p class="ph3 lh-copy measure center">What I don't have much experience with is working on short-term greenfield projects, or being dropped into a mess to help clean it up (so-called "Rails Rescue" projects). There's nothing wrong with this kind of experience, but that's not what this book is about.</p>
+        <p class="ph3 lh-copy measure center">So what follows is what I tried to take away from the experience above, from the great decisions my colleges and I made, to the unfortunate ones as well (I pushed hard for both Coffeescript and Angular 1 and we see how those turned out).</p>
+        <p class="ph3 lh-copy measure center">But, as they say, your mileage may vary, "it depends", and everything is a trade-off. Hopefully, I can at least clarify the trade-offs and how to think about them, so if you aren't in the same exact situation as me, you can still get value from my experience.</p>
+        <h3 class="ph2 pl3-ns tc f4" id="up-next">1.7 Up Next</h3>
+        <p class="ph3 lh-copy measure center">Hopefully this chapter has given you a sense of what you're in for and whether or not this book is for. I hope it is!</p>
+        <p class="ph3 lh-copy measure center">So, let's move on. Because this book is about Ruby on Rails, I want to give an overview of the application architecture Rails provides by default, and how those pieces relate to each other. From that basis, we can then deep dive into each part of Rails and learn how to use it sustainably.</p>
+      </article>
+      <footer class="bt mt2 pt2">
+        <%- include("templates/buy_now.html") %>
+      </footer>
+    </main>
+    <footer class="tc bg-near-black pa2 pb4">
+      <a name="about">
+      </a>
+      <p class="lh-copy white">Copyright © 2019–2023 by <span class="dib">David Bryant Copeland</span>, All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
